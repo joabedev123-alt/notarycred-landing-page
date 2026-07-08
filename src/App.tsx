@@ -84,33 +84,35 @@ function App() {
                 <i className="bi bi-check-circle-fill text-green-400"></i>
                 <span>Soluções para pessoas e empresas</span>
               </div>
-              <div className="flex items-center gap-2">
-                <i className="bi bi-check-circle-fill text-green-400"></i>
-                <span>Crédito com garantia de imóvel</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <i className="bi bi-check-circle-fill text-green-400"></i>
-                <span>Regularização facilitada</span>
-              </div>
+            <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
+              Transforme a burocracia do seu imóvel em liquidez. Regularize, invista e acesse as melhores taxas do mercado de forma ágil e segura.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-nc-gold text-nc-blue px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-nc-blue transition-all duration-300 shadow-xl shadow-nc-gold/20 flex items-center justify-center gap-2">
+                Fale com um Especialista <i className="bi bi-arrow-right"></i>
+              </a>
+              <a href="#solucoes" className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
+                Conheça as Soluções
+              </a>
             </div>
           </motion.div>
-
+          
           <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:w-1/2"
+            initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }}
+            className="lg:w-1/2 relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-white/20 group">
-              <div className="absolute inset-0 bg-gradient-to-t from-nc-blue/60 to-transparent z-10"></div>
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80" alt="Imóvel premium e seguro" className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform duration-700" />
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-white/10">
+              <div className="absolute inset-0 bg-gradient-to-t from-nc-blue/80 via-transparent to-transparent z-10"></div>
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Imóvel premium" className="object-cover w-full h-full" />
               
-              {/* Elementos flutuantes premium */}
-              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-xl p-4 rounded-xl shadow-2xl z-20 flex items-center gap-4 border border-white/40">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white shadow-lg shadow-green-500/30">
+              <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-xl p-5 rounded-2xl border border-white/20 z-20 flex items-center gap-5">
+                <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-white backdrop-blur-md">
                   <i className="bi bi-shield-check text-2xl"></i>
                 </div>
                 <div>
-                  <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Status Protegido</p>
-                  <p className="text-base font-bold text-slate-800">Escritura Aprovada</p>
+                  <p className="text-sm text-blue-100 font-medium tracking-wide">Certificação Jurídica</p>
+                  <p className="text-xl font-bold text-white">Processo 100% Seguro</p>
                 </div>
               </div>
             </div>
@@ -119,59 +121,54 @@ function App() {
       </section>
 
       {/* 3. BLOCO DE SOLUÇÕES RÁPIDAS */}
-      <section className="py-16 lg:py-24 bg-nc-gray relative">
+      <section className="py-20 lg:py-32 bg-slate-50 relative">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-nc-blue mb-4">Soluções para cada etapa da sua jornada imobiliária</h2>
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Cada etapa da sua jornada imobiliária</h2>
+            <p className="text-lg text-slate-600 font-light">Desenhamos ferramentas exclusivas para eliminar a burocracia e maximizar o potencial do seu patrimônio.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
               {
                 title: 'Crédito com garantia',
-                desc: 'Use seu imóvel para acessar crédito com melhores condições.',
-                img: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=600&q=80',
-                alt: 'Imóvel moderno'
+                desc: 'Use seu imóvel para acessar crédito com as melhores condições do mercado.',
+                img: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=600&q=80'
               },
               {
                 title: 'Regularização facilitada',
-                desc: 'Orientação para escritura, ITBI, registro e documentação.',
-                img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80',
-                alt: 'Documentos e assinaturas'
+                desc: 'Assessoria completa para escritura, ITBI, registro e documentação.',
+                img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80'
               },
               {
                 title: 'Segurança jurídica',
-                desc: 'Mais clareza e confiança para avançar com seu imóvel.',
-                img: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80',
-                alt: 'Segurança e justiça'
+                desc: 'Mais clareza e confiança para avançar com proteção total sobre o seu imóvel.',
+                img: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80'
               },
               {
                 title: 'Tecnologia imobiliária',
-                desc: 'Identificação inteligente de oportunidades de regularização.',
-                img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
-                alt: 'Tecnologia e dados'
+                desc: 'Sistemas inteligentes para identificação de oportunidades de regularização.',
+                img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'
               },
               {
                 title: 'Atendimento nacional',
-                desc: 'Soluções para clientes em todo o Brasil.',
-                img: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80',
-                alt: 'Atendimento global e mapa'
+                desc: 'Soluções de ponta a ponta disponíveis para clientes em todo o território nacional.',
+                img: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80'
               },
               {
-                title: 'Soluções para empresas',
-                desc: 'Ferramentas para construtoras, incorporadoras e parceiros.',
-                img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80',
-                alt: 'Prédios corporativos'
+                title: 'Soluções corporativas',
+                desc: 'Ferramentas desenhadas exclusivamente para construtoras, incorporadoras e parceiros.',
+                img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80'
               }
             ].map((item, idx) => (
-              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl shadow-xl flex flex-col h-[320px] md:h-[360px] relative overflow-hidden group ring-1 ring-gray-200">
-                <div className="h-1/2 w-full relative overflow-hidden">
-                  <img src={item.img} alt={item.alt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-nc-blue/90"></div>
+              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] flex flex-col relative overflow-hidden group transition-all duration-500 border border-slate-100">
+                <div className="h-[240px] w-full relative overflow-hidden">
+                  <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
-                <div className="h-1/2 bg-gradient-to-b from-nc-blue to-slate-900 p-8 flex flex-col justify-center text-center">
-                  <h3 className="text-lg font-bold text-white mb-2 drop-shadow-sm">{item.title}</h3>
-                  <p className="text-blue-100 text-xs leading-relaxed">{item.desc}</p>
+                <div className="p-8 bg-white flex flex-col flex-1 relative z-20">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">{item.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed font-light">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -180,18 +177,18 @@ function App() {
       </section>
 
       {/* 4. SEÇÃO INSTITUCIONAL / SOBRE */}
-      <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+      <section className="py-20 lg:py-32 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-20">
           <motion.div 
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
              className="lg:w-1/2 relative"
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-200 group">
-              <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1000&q=80" alt="Consultoria imobiliária premium" className="w-full h-auto object-cover aspect-[4/5] scale-105 group-hover:scale-100 transition-transform duration-700" />
+            <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1000&q=80" alt="Consultoria imobiliária premium" className="w-full h-auto object-cover aspect-[4/5] hover:scale-105 transition-transform duration-700" />
             </div>
-            <div className="absolute -bottom-8 -right-8 bg-gradient-to-br from-nc-blue to-slate-900 text-white p-8 rounded-3xl shadow-2xl max-w-xs hidden md:block ring-1 ring-white/10">
-              <i className="bi bi-quote text-5xl text-nc-gold mb-4 block drop-shadow-md"></i>
-              <p className="font-medium text-lg leading-relaxed">"Unimos análise especializada e tecnologia para transformar complexidade em soluções."</p>
+            <div className="absolute -bottom-10 -right-10 bg-slate-900 text-white p-10 rounded-[2rem] shadow-2xl max-w-[320px] hidden md:block">
+              <i className="bi bi-quote text-5xl text-nc-gold mb-4 block opacity-50"></i>
+              <p className="font-light text-lg leading-relaxed">"Unimos análise inteligente e tecnologia para transformar complexidade em liquidez absoluta."</p>
             </div>
           </motion.div>
           
@@ -199,16 +196,20 @@ function App() {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
              className="lg:w-1/2"
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-nc-gray text-nc-blue font-semibold text-sm mb-4 tracking-wider uppercase">Sobre a NotaryCred</span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6 leading-tight">
-              Tornamos a regularização imobiliária mais simples para quem quer resolver de verdade
-            </h2>
-            <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-              A NotaryCred nasceu para facilitar a vida de quem possui imóvel irregular, precisa escriturar, deseja regularizar a documentação ou quer utilizar o patrimônio com mais inteligência. Unimos análise especializada, soluções acessíveis e tecnologia para transformar um processo complexo em algo mais claro, prático e confiável.
-            </p>
-            <a href="#solucoes" className="inline-flex items-center gap-2 bg-nc-blue text-white px-8 py-3.5 rounded-full font-medium hover:bg-nc-blue-light transition-colors">
-              Conhecer soluções
-              <i className="bi bi-arrow-right"></i>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight">O que a <span className="text-nc-blue">NotaryCred</span> faz por você?</h2>
+            <div className="space-y-6 text-lg text-slate-600 font-light leading-relaxed">
+              <p>
+                Atuamos de forma inovadora para solucionar um dos maiores gargalos do mercado: <strong>a regularização imobiliária</strong>.
+              </p>
+              <p>
+                Unimos crédito inteligente, suporte jurídico e tecnologia avançada para viabilizar escrituras, pagamentos de impostos (ITBI) e taxas cartoriais sem que você precise descapitalizar o seu negócio.
+              </p>
+              <p>
+                Seja para pessoa física ou jurídica, transformamos o patrimônio imobilizado em oportunidades reais e seguras.
+              </p>
+            </div>
+            <a href="#solucoes" className="inline-block mt-10 bg-nc-blue text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-900 transition-colors shadow-xl shadow-nc-blue/20">
+              Conheça Nossa Metodologia
             </a>
           </motion.div>
         </div>
@@ -293,63 +294,54 @@ function App() {
         </div>
       </section>
 
-      {/* 6. FAIXA DE NÚMEROS / INDICADORES */}
-      <section className="bg-slate-900 py-16">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-slate-700/50">
-            <div className="text-center px-4">
-              <i className="bi bi-layers text-3xl text-nc-gold mb-3 inline-block"></i>
-              <h4 className="text-4xl font-bold text-white mb-2">3</h4>
-              <p className="text-slate-400 text-sm uppercase tracking-wider">Soluções Principais</p>
-              <p className="text-slate-500 text-xs mt-1">Para crédito, tecnologia e regularização</p>
-            </div>
-            <div className="text-center px-4">
-              <i className="bi bi-map text-3xl text-nc-gold mb-3 inline-block"></i>
-              <h4 className="text-4xl font-bold text-white mb-2">Nacional</h4>
-              <p className="text-slate-400 text-sm uppercase tracking-wider">Atendimento</p>
-              <p className="text-slate-500 text-xs mt-1">Clientes em todo o Brasil</p>
-            </div>
-            <div className="text-center px-4">
-              <i className="bi bi-graph-down text-3xl text-nc-gold mb-3 inline-block"></i>
-              <h4 className="text-4xl font-bold text-white mb-2">Acessível</h4>
-              <p className="text-slate-400 text-sm uppercase tracking-wider">Processo Simples</p>
-              <p className="text-slate-500 text-xs mt-1">Mais clareza para regularizar seu imóvel</p>
-            </div>
-            <div className="text-center px-4">
-              <i className="bi bi-shield-check text-3xl text-nc-gold mb-3 inline-block"></i>
-              <h4 className="text-4xl font-bold text-white mb-2">Segurança</h4>
-              <p className="text-slate-400 text-sm uppercase tracking-wider">Patrimonial</p>
-              <p className="text-slate-500 text-xs mt-1">Regularização com orientação e estrutura</p>
-            </div>
+      {/* 6. BANNER DE INDICADORES / ESTATÍSTICAS */}
+      <section className="py-24 bg-nc-blue text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-5 mix-blend-screen"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-nc-blue via-transparent to-nc-blue opacity-90"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+            {[
+              { icon: 'bi-layers-fill', title: '50%+', desc: 'Imóveis irregulares no país' },
+              { icon: 'bi-map-fill', title: 'Nacional', desc: 'Cobertura em todo o Brasil' },
+              { icon: 'bi-graph-down-arrow', title: 'Redução', desc: 'Da burocracia documental' },
+              { icon: 'bi-shield-check', title: '100%', desc: 'De segurança jurídica' }
+            ].map((stat, idx) => (
+              <div key={idx} className="text-center group">
+                <i className={`bi ${stat.icon} text-4xl text-nc-gold mb-6 block group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_15px_rgba(197,168,102,0.4)]`}></i>
+                <h4 className="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">{stat.title}</h4>
+                <p className="text-blue-200 font-light text-sm md:text-base">{stat.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 7. COMO FUNCIONA */}
-      <section id="como-funciona" className="py-16 lg:py-24 bg-white relative overflow-hidden">
+      {/* 7. COMO FUNCIONA (Sleek Minimalist) */}
+      <section id="como-funciona" className="py-20 lg:py-32 bg-slate-50 relative overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-nc-blue">Como funciona na prática</h2>
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">Como funciona na prática</h2>
+            <p className="text-slate-500 text-lg mt-4 font-light">Um processo simplificado para garantir a sua tranquilidade.</p>
           </div>
           
-          <div className="flex flex-col md:flex-row justify-between items-start relative max-w-5xl mx-auto">
-            <div className="hidden md:block absolute top-10 left-10 right-10 h-0.5 bg-gray-100 -z-10"></div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { num: '1', title: 'Você entra em contato', desc: 'Fala com a NotaryCred e explica a situação do imóvel.', icon: 'bi-chat-dots-fill' },
-              { num: '2', title: 'Análise do caso', desc: 'A equipe entende a documentação e identifica a necessidade.', icon: 'bi-search' },
-              { num: '3', title: 'Solução ideal', desc: 'Indicamos o melhor caminho: regularização, viabilização ou crédito.', icon: 'bi-lightbulb-fill' },
-              { num: '4', title: 'Avanço com segurança', desc: 'Você segue o processo com mais clareza, apoio e praticidade.', icon: 'bi-rocket-fill' }
+              { num: '01', title: 'Contato Inicial', desc: 'Analisamos a situação do imóvel de forma rápida e confidencial.', icon: 'bi-chat-right-dots-fill' },
+              { num: '02', title: 'Análise Estratégica', desc: 'Identificamos as pendências e a necessidade real de capital.', icon: 'bi-search' },
+              { num: '03', title: 'Solução Ideal', desc: 'Desenhamos o crédito estruturado perfeito para o seu caso.', icon: 'bi-lightbulb-fill' },
+              { num: '04', title: 'Execução', desc: 'Liberação de crédito, quitação das taxas e imissão da posse.', icon: 'bi-check-circle-fill' }
             ].map((step, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center max-w-[200px] mb-10 md:mb-0 mx-auto group">
-                <div className="w-24 h-24 bg-white border-[6px] border-nc-gray rounded-full flex items-center justify-center text-4xl text-nc-blue mb-6 shadow-xl relative group-hover:scale-110 group-hover:border-nc-gold/20 transition-all duration-300">
-                  <i className={`bi ${step.icon} drop-shadow-md`}></i>
-                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-gradient-to-br from-nc-gold to-yellow-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
-                    {step.num}
-                  </div>
+              <div key={idx} className="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative overflow-hidden border border-slate-100 group hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500">
+                <div className="absolute -top-6 -right-6 text-8xl font-black text-slate-50 group-hover:text-slate-100 transition-colors duration-500 z-0">
+                  {step.num}
                 </div>
-                <h4 className="text-lg font-bold text-slate-800 mb-2">{step.title}</h4>
-                <p className="text-sm text-slate-600">{step.desc}</p>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-lg shadow-slate-900/20 group-hover:bg-nc-blue transition-colors duration-300">
+                    <i className={`bi ${step.icon}`}></i>
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">{step.title}</h3>
+                  <p className="text-slate-500 font-light text-sm leading-relaxed">{step.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -419,16 +411,10 @@ function App() {
       </section>
 
       {/* 13. CTA FINAL */}
-      <section className="py-16 lg:py-20 bg-nc-blue relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-nc-gold to-transparent"></div>
+      <section className="py-24 lg:py-32 bg-slate-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Pronto para regularizar seu imóvel com mais clareza?</h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Fale com a NotaryCred e descubra qual solução faz mais sentido para o seu caso.</p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href={WHATSAPP_LINK} className="bg-nc-gold text-nc-blue px-8 py-4 rounded-full font-bold text-lg hover:bg-nc-gold-light transition-all shadow-xl shadow-nc-gold/20">
-              Falar com especialista
-            </a>
-            <a href="#solucoes" className="bg-transparent border border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors">
               Conhecer soluções
             </a>
           </div>
