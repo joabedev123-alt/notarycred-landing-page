@@ -53,7 +53,7 @@ function App() {
       </header>
 
       {/* 2. HERO PRINCIPAL */}
-      <section id="inicio" className="pt-32 pb-20 bg-nc-blue text-white relative overflow-hidden">
+      <section id="inicio" className="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-nc-blue text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-nc-blue-light/20 to-transparent pointer-events-none"></div>
         <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 relative z-10">
           <motion.div 
@@ -119,7 +119,7 @@ function App() {
       </section>
 
       {/* 3. BLOCO DE SOLUÇÕES RÁPIDAS */}
-      <section className="py-24 bg-nc-gray">
+      <section className="py-16 lg:py-24 bg-nc-gray relative">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-nc-blue mb-4">Soluções para cada etapa da sua jornada imobiliária</h2>
@@ -164,14 +164,14 @@ function App() {
                 alt: 'Prédios corporativos'
               }
             ].map((item, idx) => (
-              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl shadow-xl flex flex-col h-[400px] relative overflow-hidden group ring-1 ring-gray-200">
+              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl shadow-xl flex flex-col h-[320px] md:h-[360px] relative overflow-hidden group ring-1 ring-gray-200">
                 <div className="h-1/2 w-full relative overflow-hidden">
                   <img src={item.img} alt={item.alt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-nc-blue/90"></div>
                 </div>
                 <div className="h-1/2 bg-gradient-to-b from-nc-blue to-slate-900 p-8 flex flex-col justify-center text-center">
-                  <h3 className="text-xl font-bold text-white mb-2 drop-shadow-sm">{item.title}</h3>
-                  <p className="text-blue-100 text-sm leading-relaxed">{item.desc}</p>
+                  <h3 className="text-lg font-bold text-white mb-2 drop-shadow-sm">{item.title}</h3>
+                  <p className="text-blue-100 text-xs leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -180,7 +180,7 @@ function App() {
       </section>
 
       {/* 4. SEÇÃO INSTITUCIONAL / SOBRE */}
-      <section className="py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
           <motion.div 
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
@@ -215,7 +215,7 @@ function App() {
       </section>
 
       {/* 5. SEÇÃO DOS 3 PRODUTOS PRINCIPAIS */}
-      <section id="solucoes" className="py-24 bg-nc-gray">
+      <section id="solucoes" className="py-16 lg:py-24 bg-nc-gray">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-nc-blue mb-4">Conheça as principais soluções da NotaryCred</h2>
@@ -326,7 +326,7 @@ function App() {
       </section>
 
       {/* 7. COMO FUNCIONA */}
-      <section id="como-funciona" className="py-24 bg-white">
+      <section id="como-funciona" className="py-16 lg:py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-nc-blue">Como funciona na prática</h2>
@@ -357,7 +357,7 @@ function App() {
       </section>
 
       {/* 8. BENEFÍCIOS */}
-      <section id="beneficios" className="py-24 bg-nc-gray">
+      <section id="beneficios" className="py-16 lg:py-24 bg-nc-gray">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-nc-blue mb-4">Por que escolher a NotaryCred?</h2>
@@ -386,7 +386,7 @@ function App() {
       </section>
 
       {/* 11. FAQ */}
-      <section id="faq" className="py-24 bg-white">
+      <section id="faq" className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-nc-blue mb-4">Dúvidas frequentes</h2>
@@ -419,7 +419,7 @@ function App() {
       </section>
 
       {/* 13. CTA FINAL */}
-      <section className="py-20 bg-nc-blue relative overflow-hidden">
+      <section className="py-16 lg:py-20 bg-nc-blue relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-nc-gold to-transparent"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Pronto para regularizar seu imóvel com mais clareza?</h2>
