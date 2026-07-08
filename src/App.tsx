@@ -126,84 +126,55 @@ function App() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card 1: Crédito com garantia (Full Blue) */}
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-gradient-to-b from-nc-blue to-slate-900 rounded-3xl p-8 shadow-xl text-center flex flex-col h-[400px] relative overflow-hidden group">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(197,168,102,0.15)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="text-2xl font-bold text-white mb-3 relative z-10">Crédito com garantia</h3>
-              <p className="text-blue-100 text-sm mb-auto relative z-10">Use seu imóvel para acessar crédito com melhores condições.</p>
-              <div className="relative z-10 flex justify-center items-center flex-1">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-cyan-400 blur-2xl opacity-20 rounded-full"></div>
-                  <i className="bi bi-house-heart text-7xl text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]"></i>
+            {[
+              {
+                title: 'Crédito com garantia',
+                desc: 'Use seu imóvel para acessar crédito com melhores condições.',
+                img: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=600&q=80',
+                alt: 'Imóvel moderno'
+              },
+              {
+                title: 'Regularização facilitada',
+                desc: 'Orientação para escritura, ITBI, registro e documentação.',
+                img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80',
+                alt: 'Documentos e assinaturas'
+              },
+              {
+                title: 'Segurança jurídica',
+                desc: 'Mais clareza e confiança para avançar com seu imóvel.',
+                img: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80',
+                alt: 'Segurança e justiça'
+              },
+              {
+                title: 'Tecnologia imobiliária',
+                desc: 'Identificação inteligente de oportunidades de regularização.',
+                img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
+                alt: 'Tecnologia e dados'
+              },
+              {
+                title: 'Atendimento nacional',
+                desc: 'Soluções para clientes em todo o Brasil.',
+                img: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80',
+                alt: 'Atendimento global e mapa'
+              },
+              {
+                title: 'Soluções para empresas',
+                desc: 'Ferramentas para construtoras, incorporadoras e parceiros.',
+                img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80',
+                alt: 'Prédios corporativos'
+              }
+            ].map((item, idx) => (
+              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl shadow-xl flex flex-col h-[400px] relative overflow-hidden group ring-1 ring-gray-200">
+                <div className="h-1/2 w-full relative overflow-hidden">
+                  <img src={item.img} alt={item.alt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-nc-blue/90"></div>
                 </div>
-              </div>
-            </motion.div>
-
-            {/* Card 2: Regularização facilitada (Split White/Blue) */}
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl shadow-xl flex flex-col sm:flex-row h-auto sm:h-[400px] relative overflow-hidden group">
-              <div className="w-full sm:w-1/2 p-8 sm:p-6 flex flex-col justify-center items-center text-center border-b sm:border-b-0 sm:border-r border-gray-100">
-                <i className="bi bi-file-earmark-check text-5xl text-nc-blue mb-4"></i>
-                <p className="text-sm font-bold text-slate-800">Orientação completa</p>
-              </div>
-              <div className="w-full sm:w-1/2 bg-gradient-to-b from-nc-blue to-slate-900 p-8 sm:p-6 flex flex-col justify-center items-center text-center">
-                <i className="bi bi-clock-history text-5xl text-cyan-300 mb-4 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]"></i>
-                <h3 className="text-lg font-bold text-white mb-2">Regularização</h3>
-                <p className="text-blue-100 text-xs">Escritura, ITBI, registro e documentação.</p>
-              </div>
-            </motion.div>
-
-            {/* Card 3: Segurança jurídica (Full Blue + Lock) */}
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-gradient-to-b from-nc-blue to-slate-900 rounded-3xl p-8 shadow-xl text-center flex flex-col h-[400px] relative overflow-hidden group">
-              <h3 className="text-2xl font-bold text-white mb-3 relative z-10">Segurança jurídica</h3>
-              <p className="text-blue-100 text-sm mb-auto relative z-10">Mais clareza e confiança para avançar com seu imóvel.</p>
-              <div className="relative z-10 flex justify-center items-center flex-1 mt-6">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-30 rounded-full scale-150"></div>
-                  <i className="bi bi-shield-lock text-8xl text-blue-300 drop-shadow-[0_0_20px_rgba(96,165,250,0.6)]"></i>
+                <div className="h-1/2 bg-gradient-to-b from-nc-blue to-slate-900 p-8 flex flex-col justify-center text-center">
+                  <h3 className="text-xl font-bold text-white mb-2 drop-shadow-sm">{item.title}</h3>
+                  <p className="text-blue-100 text-sm leading-relaxed">{item.desc}</p>
                 </div>
-              </div>
-            </motion.div>
-
-            {/* Card 4: Tecnologia imobiliária (Full Blue + Connection) */}
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-gradient-to-b from-nc-blue to-slate-900 rounded-3xl p-8 shadow-xl flex flex-col h-[400px] relative overflow-hidden group">
-              <h3 className="text-2xl font-bold text-white mb-3 relative z-10">Tecnologia imobiliária</h3>
-              <p className="text-blue-100 text-sm relative z-10">Identificação inteligente de oportunidades de regularização.</p>
-              <div className="relative z-10 flex justify-center items-center flex-1 mt-8">
-                <div className="relative flex items-center justify-center w-full">
-                  <div className="absolute w-full h-0.5 bg-cyan-500/30 top-1/2 -translate-y-1/2"></div>
-                  <i className="bi bi-phone text-6xl text-white bg-slate-900 rounded-2xl p-2 z-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"></i>
-                  <div className="absolute right-4 w-12 h-12 bg-nc-blue border-2 border-cyan-400 rounded-full flex items-center justify-center z-10">
-                    <i className="bi bi-building text-cyan-400"></i>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Card 5: Atendimento nacional (Full Blue + CashBack style) */}
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-gradient-to-b from-nc-blue to-slate-900 rounded-3xl p-8 shadow-xl text-center flex flex-col justify-between h-[400px] relative overflow-hidden group">
-              <div className="relative z-10 flex justify-center items-center flex-1">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-green-400 blur-2xl opacity-20 rounded-full scale-150"></div>
-                  <i className="bi bi-globe-americas text-8xl text-green-400 drop-shadow-[0_0_20px_rgba(74,222,128,0.5)]"></i>
-                </div>
-              </div>
-              <div className="relative z-10 mt-6">
-                <h3 className="text-2xl font-bold text-white mb-2">Atendimento nacional</h3>
-                <p className="text-blue-100 text-sm">Soluções para clientes em todo o Brasil.</p>
-              </div>
-            </motion.div>
-
-            {/* Card 6: Soluções para empresas (Photo Top + Blue Bottom) */}
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl shadow-xl flex flex-col h-[400px] relative overflow-hidden group">
-              <div className="h-1/2 w-full relative">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Prédios corporativos" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-nc-blue/90"></div>
-              </div>
-              <div className="h-1/2 bg-gradient-to-b from-nc-blue to-slate-900 p-8 flex flex-col justify-center text-center">
-                <h3 className="text-xl font-bold text-white mb-2">Soluções para empresas</h3>
-                <p className="text-blue-100 text-sm">Ferramentas para construtoras, incorporadoras e parceiros.</p>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
