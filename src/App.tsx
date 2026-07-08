@@ -63,27 +63,6 @@ function App() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Regularize seu imóvel com mais <span className="text-nc-gold">facilidade, segurança e inteligência</span>
             </h1>
-            <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-xl">
-              A NotaryCred une tecnologia, crédito e regularização imobiliária para ajudar você a resolver escritura, ITBI, registro e crédito com garantia de imóvel de forma muito mais prática.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-nc-gold text-nc-blue text-center px-8 py-3.5 rounded-full font-bold hover:bg-nc-gold-light transition-all shadow-lg shadow-nc-gold/20">
-                Quero regularizar meu imóvel
-              </a>
-              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-transparent border border-white text-white text-center px-8 py-3.5 rounded-full font-medium hover:bg-white/10 transition-colors">
-                Falar com especialista
-              </a>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4 text-sm text-blue-200">
-              <div className="flex items-center gap-2">
-                <i className="bi bi-check-circle-fill text-green-400"></i>
-                <span>Atendimento em todo o Brasil</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <i className="bi bi-check-circle-fill text-green-400"></i>
-                <span>Soluções para pessoas e empresas</span>
-              </div>
             <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
               Transforme a burocracia do seu imóvel em liquidez. Regularize, invista e acesse as melhores taxas do mercado de forma ágil e segura.
             </p>
@@ -415,9 +394,11 @@ function App() {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-              Conhecer soluções
-            </a>
-          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 tracking-tight">Pronto para transformar seu patrimônio?</h2>
+          <p className="text-slate-300 mb-10 text-lg md:text-xl max-w-2xl mx-auto font-light">Fale com um especialista agora e descubra como a NotaryCred pode acelerar o processo de forma 100% segura.</p>
+          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="inline-block bg-nc-gold text-slate-900 px-10 py-5 rounded-2xl font-extrabold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-nc-gold/20">
+            Falar com Especialista
+          </a>
         </div>
       </section>
 
