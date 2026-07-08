@@ -99,21 +99,20 @@ function App() {
             initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:w-1/2"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-              <div className="absolute inset-0 bg-nc-blue/20 mix-blend-multiply z-10"></div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Família feliz com imóvel seguro" className="object-cover w-full h-full" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-white/20 group">
+              <div className="absolute inset-0 bg-gradient-to-t from-nc-blue/60 to-transparent z-10"></div>
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80" alt="Imóvel premium e seguro" className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform duration-700" />
               
               {/* Elementos flutuantes premium */}
-              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg z-20 flex items-center gap-3">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                  <i className="bi bi-file-earmark-check-fill text-xl"></i>
+              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-xl p-4 rounded-xl shadow-2xl z-20 flex items-center gap-4 border border-white/40">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white shadow-lg shadow-green-500/30">
+                  <i className="bi bi-shield-check text-2xl"></i>
                 </div>
                 <div>
-                  <p className="text-xs text-slate-500 font-medium">Status</p>
-                  <p className="text-sm font-bold text-slate-800">Escritura Aprovada</p>
+                  <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Status Protegido</p>
+                  <p className="text-base font-bold text-slate-800">Escritura Aprovada</p>
                 </div>
               </div>
-              
             </div>
           </motion.div>
         </div>
@@ -216,12 +215,12 @@ function App() {
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
              className="lg:w-1/2 relative"
           >
-            <div className="rounded-3xl overflow-hidden shadow-xl">
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Equipe NotaryCred em reunião consultiva" className="w-full h-auto object-cover aspect-[4/5]" />
+            <div className="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-200 group">
+              <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1000&q=80" alt="Consultoria imobiliária premium" className="w-full h-auto object-cover aspect-[4/5] scale-105 group-hover:scale-100 transition-transform duration-700" />
             </div>
-            <div className="absolute -bottom-8 -right-8 bg-nc-blue text-white p-8 rounded-2xl shadow-xl max-w-xs hidden md:block">
-              <i className="bi bi-quote text-4xl text-nc-gold mb-2 block"></i>
-              <p className="font-medium text-lg leading-snug">"Unimos análise especializada e tecnologia para transformar complexidade em soluções."</p>
+            <div className="absolute -bottom-8 -right-8 bg-gradient-to-br from-nc-blue to-slate-900 text-white p-8 rounded-3xl shadow-2xl max-w-xs hidden md:block ring-1 ring-white/10">
+              <i className="bi bi-quote text-5xl text-nc-gold mb-4 block drop-shadow-md"></i>
+              <p className="font-medium text-lg leading-relaxed">"Unimos análise especializada e tecnologia para transformar complexidade em soluções."</p>
             </div>
           </motion.div>
           
@@ -256,8 +255,8 @@ function App() {
             {/* Card 1 */}
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 flex flex-col h-full">
               <div className="mb-6 flex-1">
-                <div className="w-14 h-14 bg-nc-blue/10 rounded-2xl flex items-center justify-center text-nc-blue text-3xl mb-6">
-                  <i className="bi bi-cash-coin"></i>
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center text-nc-blue text-3xl mb-6 shadow-inner ring-1 ring-blue-200/50">
+                  <i className="bi bi-house-heart-fill"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-slate-800 mb-2">Home Equity Convencional</h3>
                 <p className="text-nc-gold font-medium mb-4">Empréstimo com garantia do imóvel</p>
@@ -277,10 +276,10 @@ function App() {
 
             {/* Card 2 */}
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-nc-blue text-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-nc-gold/10 rounded-full blur-3xl"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-nc-gold/20 rounded-full blur-3xl"></div>
               <div className="mb-6 flex-1 relative z-10">
-                <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-nc-gold text-3xl mb-6">
-                  <i className="bi bi-radar"></i>
+                <div className="w-16 h-16 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl flex items-center justify-center text-nc-gold text-3xl mb-6 backdrop-blur-md ring-1 ring-white/20 shadow-lg">
+                  <i className="bi bi-binoculars-fill"></i>
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Real Estate Intelligence Scanner</h3>
                 <p className="text-nc-gold-light font-medium mb-4">Sistema de busca de imóveis não escriturados</p>
@@ -301,8 +300,8 @@ function App() {
             {/* Card 3 */}
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 flex flex-col h-full">
               <div className="mb-6 flex-1">
-                <div className="w-14 h-14 bg-nc-blue/10 rounded-2xl flex items-center justify-center text-nc-blue text-3xl mb-6">
-                  <i className="bi bi-file-earmark-medical"></i>
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center text-nc-blue text-3xl mb-6 shadow-inner ring-1 ring-blue-200/50">
+                  <i className="bi bi-file-earmark-check-fill"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-slate-800 mb-2">Regulariza Já NotaryCred</h3>
                 <p className="text-nc-gold font-medium mb-4">Transformamos o imóvel em crédito para garantir a escritura</p>
@@ -366,15 +365,15 @@ function App() {
             <div className="hidden md:block absolute top-10 left-10 right-10 h-0.5 bg-gray-100 -z-10"></div>
             
             {[
-              { num: '1', title: 'Você entra em contato', desc: 'Fala com a NotaryCred e explica a situação do imóvel.', icon: 'bi-chat-dots' },
+              { num: '1', title: 'Você entra em contato', desc: 'Fala com a NotaryCred e explica a situação do imóvel.', icon: 'bi-chat-dots-fill' },
               { num: '2', title: 'Análise do caso', desc: 'A equipe entende a documentação e identifica a necessidade.', icon: 'bi-search' },
-              { num: '3', title: 'Solução ideal', desc: 'Indicamos o melhor caminho: regularização, viabilização ou crédito.', icon: 'bi-lightbulb' },
-              { num: '4', title: 'Avanço com segurança', desc: 'Você segue o processo com mais clareza, apoio e praticidade.', icon: 'bi-rocket' }
+              { num: '3', title: 'Solução ideal', desc: 'Indicamos o melhor caminho: regularização, viabilização ou crédito.', icon: 'bi-lightbulb-fill' },
+              { num: '4', title: 'Avanço com segurança', desc: 'Você segue o processo com mais clareza, apoio e praticidade.', icon: 'bi-rocket-fill' }
             ].map((step, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center max-w-[200px] mb-10 md:mb-0 mx-auto">
-                <div className="w-20 h-20 bg-white border-4 border-nc-gray rounded-full flex items-center justify-center text-3xl text-nc-blue mb-4 shadow-sm relative">
-                  <i className={`bi ${step.icon}`}></i>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-nc-gold text-white rounded-full flex items-center justify-center font-bold border-2 border-white shadow-sm">
+              <div key={idx} className="flex flex-col items-center text-center max-w-[200px] mb-10 md:mb-0 mx-auto group">
+                <div className="w-24 h-24 bg-white border-[6px] border-nc-gray rounded-full flex items-center justify-center text-4xl text-nc-blue mb-6 shadow-xl relative group-hover:scale-110 group-hover:border-nc-gold/20 transition-all duration-300">
+                  <i className={`bi ${step.icon} drop-shadow-md`}></i>
+                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-gradient-to-br from-nc-gold to-yellow-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
                     {step.num}
                   </div>
                 </div>
@@ -395,20 +394,20 @@ function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: 'bi-shield-check', title: 'Mais segurança jurídica' },
+              { icon: 'bi-shield-fill-check', title: 'Mais segurança jurídica' },
               { icon: 'bi-graph-up-arrow', title: 'Mais valorização do patrimônio' },
-              { icon: 'bi-house-check', title: 'Facilidade para vender ou regularizar' },
-              { icon: 'bi-lightning', title: 'Menos burocracia' },
-              { icon: 'bi-piggy-bank', title: 'Solução acessível e prática' },
+              { icon: 'bi-house-check-fill', title: 'Facilidade para vender ou regularizar' },
+              { icon: 'bi-lightning-charge-fill', title: 'Menos burocracia' },
+              { icon: 'bi-piggy-bank-fill', title: 'Solução acessível e prática' },
               { icon: 'bi-headset', title: 'Atendimento claro e orientado' },
-              { icon: 'bi-cpu', title: 'Tecnologia aplicada ao mercado' },
-              { icon: 'bi-cash-coin', title: 'Imóvel como oportunidade financeira' }
+              { icon: 'bi-cpu-fill', title: 'Tecnologia aplicada ao mercado' },
+              { icon: 'bi-gem', title: 'Imóvel como oportunidade financeira' }
             ].map((item, idx) => (
-              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-nc-gold/10 text-nc-gold rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
+              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                <div className="w-14 h-14 bg-gradient-to-br from-nc-gold/10 to-nc-gold/5 text-nc-gold rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 ring-1 ring-nc-gold/20 group-hover:bg-nc-gold group-hover:text-white transition-colors duration-300">
                   <i className={`bi ${item.icon}`}></i>
                 </div>
-                <h4 className="text-slate-800 font-bold leading-tight mt-1">{item.title}</h4>
+                <h4 className="text-slate-800 font-bold leading-tight">{item.title}</h4>
               </motion.div>
             ))}
           </div>
