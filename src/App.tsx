@@ -67,182 +67,49 @@ function App() {
       </header>
 
       {/* 2. HERO PRINCIPAL */}
-      <section id="inicio" className="pt-36 lg:pt-0 bg-[#061B2D] text-white relative flex flex-col">
-        {/* Fundo imagem na direita (Desktop) */}
-        <div className="absolute inset-0 z-0 hidden lg:block">
-           <div className="absolute inset-0 bg-[#061B2D] z-10 w-[55%]"></div>
-           <div className="absolute inset-0 bg-gradient-to-r from-[#061B2D] via-[#061B2D]/90 to-transparent z-10 w-[70%]"></div>
-           <img src="/couple-couch.png" alt="Casal feliz usando tablet no sofá" className="absolute right-0 top-0 h-full w-[55%] object-cover object-right z-0" />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-20 flex-1 flex flex-col lg:flex-row items-center pt-10 lg:pt-48 pb-16 lg:pb-32">
-          
+      <section id="inicio" className="pt-36 pb-16 lg:pt-48 lg:pb-24 bg-nc-navy-dark text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-nc-tech-blue/20 to-transparent pointer-events-none"></div>
+        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 relative z-10">
           <motion.div 
             initial="hidden" animate="visible" variants={fadeUp}
-            className="lg:w-[55%] xl:w-[60%]"
+            className="lg:w-1/2"
           >
-            {/* Badge HOME EQUITY */}
-            <div className="inline-flex items-center gap-2 border border-[#0EA5E9]/30 rounded-full px-4 py-1.5 mb-8 bg-[#0EA5E9]/10 backdrop-blur-sm">
-              <i className="bi bi-check-circle text-[#9EEBFF] text-sm"></i>
-              <span className="text-xs font-bold tracking-widest text-[#9EEBFF]">HOME EQUITY</span>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.08] mb-6 text-white max-w-[620px]">
-              Transforme o valor<br/>do seu imóvel em<br/>
-              <span className="text-[#45E07A]">liberdade financeira.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              Regularize seu imóvel com mais <span className="text-nc-trust-green">facilidade, segurança e inteligência</span>
             </h1>
-            <p className="text-[17px] lg:text-[20px] text-[#D4DEE8] mb-10 leading-[1.55] font-light max-w-[640px] mx-auto lg:mx-0">
-              O Home Equity é uma solução segura e inteligente para quem quer realizar planos, investir ou reorganizar as finanças com as melhores taxas do mercado.
+            <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
+              Transforme a burocracia do seu imóvel em liquidez. Regularize, invista e acesse as melhores taxas do mercado de forma ágil e segura.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mb-12">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-[#17B85F] text-white px-8 py-4 rounded-[10px] font-bold text-lg hover:bg-[#149E52] transition-all duration-300 shadow-[0_18px_50px_rgba(0,0,0,0.28)] flex items-center justify-center gap-2">
-                Simule seu Home Equity <i className="bi bi-arrow-right"></i>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-white text-nc-navy-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-xl flex items-center justify-center gap-2">
+                Fale com um Especialista <i className="bi bi-arrow-right"></i>
               </a>
-              <a href="#solucoes" className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-[10px] font-bold text-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2">
-                Falar com especialista <i className="bi bi-chat-left-text"></i>
+              <a href="#solucoes" className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
+                Conheça as Soluções
               </a>
             </div>
-
-            {/* Trust points */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-10 justify-center lg:justify-start">
-               <div className="flex items-start gap-3">
-                 <i className="bi bi-shield-check text-[#17B85F] mt-0.5 text-lg"></i>
-                 <div className="text-left">
-                   <p className="font-bold text-sm text-white">Taxas competitivas</p>
-                   <p className="text-xs text-[#A8B7C6] font-light">As melhores do mercado</p>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <i className="bi bi-cash-coin text-[#17B85F] mt-0.5 text-lg"></i>
-                 <div className="text-left">
-                   <p className="font-bold text-sm text-white">Até 60% do valor do imóvel</p>
-                   <p className="text-xs text-[#A8B7C6] font-light">Crédito com garantia real</p>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <i className="bi bi-shield-lock text-[#17B85F] mt-0.5 text-lg"></i>
-                 <div className="text-left">
-                   <p className="font-bold text-sm text-white">Processo 100% seguro</p>
-                   <p className="text-xs text-[#A8B7C6] font-light">Transparência e agilidade</p>
-                 </div>
-               </div>
-            </div>
-
           </motion.div>
           
           <motion.div 
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:w-[45%] xl:w-[40%] relative mt-16 lg:mt-0 flex justify-end"
+            className="lg:w-1/2 relative"
           >
-             {/* Imagem mobile */}
-             <div className="lg:hidden w-full h-[300px] relative rounded-3xl overflow-hidden mb-8">
-               <img src="/couple-couch.png" alt="Casal feliz" className="object-cover w-full h-full" />
-             </div>
-
-             {/* Floating Card - Simulação */}
-             <div className="bg-[#061B2D]/80 backdrop-blur-[18px] p-6 md:p-[28px] rounded-[18px] border border-white/20 shadow-[0_24px_80px_rgba(0,0,0,0.35)] relative w-full max-w-md lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-[13%] lg:max-w-[460px] overflow-hidden flex">
-               <div className="flex-1 relative z-10">
-                 <p className="text-[#35D1E8] text-sm font-bold mb-4">Simulação personalizada</p>
-                 <h3 className="text-[26px] font-[800] text-[#FFFFFF] mb-2">Até R$ 750.000,00</h3>
-                 <p className="text-xs text-[#D4DEE8] mb-1 mt-4">Com taxas a partir de</p>
-                 <p className="text-[30px] font-[800] text-[#45E07A] mb-6">1,49% a.m.</p>
-                 <p className="text-xs text-[#A8B7C6] leading-relaxed max-w-[200px]">Use o valor do seu imóvel para conquistar seus objetivos.</p>
-               </div>
-               
-               <div className="absolute right-0 bottom-0 top-0 w-1/2 opacity-80">
-                 <img src="/simple-house.png" className="w-full h-full object-cover object-left" alt="Casa" />
-                 <div className="absolute inset-0 bg-gradient-to-r from-[#061B2D] via-[#061B2D]/80 to-transparent"></div>
-                 {/* Icon inside house graphic */}
-                 <div className="absolute right-8 top-1/2 -translate-y-1/2 opacity-80">
-                    <i className="bi bi-house text-[80px] text-[#17B85F]/50"></i>
-                 </div>
-               </div>
-             </div>
-          </motion.div>
-        </div>
-
-        {/* Benefits Bottom Bar */}
-        <div className="border-t border-white/10 bg-[#061B2D]/70 backdrop-blur-md relative z-20 rounded-t-[18px] max-w-[1180px] mx-auto">
-          <div className="container mx-auto px-6 py-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
-              
-              <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-shield-check text-4xl text-[#0EA5E9]"></i>
-                <div className="text-left">
-                  <h4 className="text-white font-bold mb-1">Segurança jurídica</h4>
-                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Processos com certificação e total conformidade legal.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-rocket-takeoff text-4xl text-[#0EA5E9]"></i>
-                <div className="text-left">
-                  <h4 className="text-white font-bold mb-1">Agilidade</h4>
-                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Análise rápida e liberações eficientes.</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-calculator text-4xl text-[#0EA5E9]"></i>
-                <div className="text-left">
-                  <h4 className="text-white font-bold mb-1">Flexibilidade</h4>
-                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Prazos longos e parcelas que cabem no seu planejamento.</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-people text-4xl text-[#0EA5E9]"></i>
-                <div className="text-left">
-                  <h4 className="text-white font-bold mb-1">Atendimento consultivo</h4>
-                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Especialistas dedicados para as melhores soluções.</p>
-                </div>
-              </div>
-
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-white/10">
+              <div className="absolute inset-0 bg-gradient-to-t from-nc-blue/80 via-transparent to-transparent z-10 hidden md:block"></div>
+              <img src="/broker-contract.png" alt="Corretor assinando contrato" className="object-cover w-full h-full" />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Confiança que gera resultados */}
-      <section className="bg-[#F5F9FC] py-16 border-b border-gray-100 relative z-20">
-        <div className="container mx-auto px-6">
-          <h3 className="text-2xl md:text-3xl font-extrabold text-center text-[#071827] mb-12">Confiança que gera resultados</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
             
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-              <i className="bi bi-cash-stack text-4xl text-slate-700"></i>
-              <div>
-                <p className="text-2xl font-extrabold text-[#071827]">+ R$ 2,8 bilhões</p>
-                <p className="text-sm text-slate-500 font-medium">em crédito liberado</p>
+            <div className="mt-4 md:mt-0 md:absolute md:bottom-8 md:left-8 md:right-8 bg-white/10 backdrop-blur-xl p-3 md:p-5 rounded-2xl border border-white/20 z-20 flex items-center justify-center md:justify-start gap-3 md:gap-5 w-full md:w-auto shadow-lg shadow-black/20">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center text-white backdrop-blur-md flex-shrink-0">
+                <i className="bi bi-shield-check text-lg md:text-2xl"></i>
+              </div>
+              <div className="text-left">
+                <p className="text-[10px] md:text-sm text-blue-100 font-medium tracking-wide">Certificação Jurídica</p>
+                <p className="text-sm md:text-xl font-bold text-white leading-tight">Processo 100% Seguro</p>
               </div>
             </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-              <i className="bi bi-person-plus text-4xl text-slate-700"></i>
-              <div>
-                <p className="text-2xl font-extrabold text-[#071827]">+ 18 mil</p>
-                <p className="text-sm text-slate-500 font-medium">clientes atendidos</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-              <i className="bi bi-box-seam text-4xl text-slate-700"></i>
-              <div>
-                <p className="text-2xl font-extrabold text-[#071827]">+ 1,5 mil</p>
-                <p className="text-sm text-slate-500 font-medium">parceiros imobiliários</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-              <i className="bi bi-star text-4xl text-slate-700"></i>
-              <div>
-                <p className="text-2xl font-extrabold text-[#071827]">4,9/5</p>
-                <p className="text-sm text-slate-500 font-medium">avaliação dos clientes</p>
-              </div>
-            </div>
-
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -280,8 +147,8 @@ function App() {
       </section>
 
       {/* 2.5 MARCAS PARCEIRAS */}
-      <section className="py-12 bg-white border-b border-gray-100 overflow-hidden">
-        <div className="container mx-auto px-6 mb-8">
+      <section className="py-8 bg-white border-b border-gray-100 overflow-hidden">
+        <div className="container mx-auto px-6 mb-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nc-teal-title tracking-tight text-center">Marcas que confiam na NotaryCred</h2>
         </div>
         
@@ -296,7 +163,7 @@ function App() {
               '/plano.png',
               '/vic.jpg'
             ]).map((logo, idx) => (
-              <img key={idx} src={logo} alt="Marca parceira" className="h-16 md:h-24 lg:h-28 w-auto max-w-[240px] object-contain mix-blend-multiply flex-shrink-0" />
+              <img key={idx} src={logo} alt="Marca parceira" className="h-10 md:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply flex-shrink-0" />
             ))}
           </div>
         </div>
