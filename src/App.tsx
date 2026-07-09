@@ -147,8 +147,8 @@ function App() {
       </section>
 
       {/* 2.5 MARCAS PARCEIRAS */}
-      <section className="py-8 bg-white border-b border-gray-100 overflow-hidden">
-        <div className="container mx-auto px-6 mb-6">
+      <section className="py-12 bg-white border-b border-gray-100 overflow-hidden">
+        <div className="container mx-auto px-6 mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nc-teal-title tracking-tight text-center">Marcas que confiam na NotaryCred</h2>
         </div>
         
@@ -163,7 +163,7 @@ function App() {
               '/plano.png',
               '/vic.jpg'
             ]).map((logo, idx) => (
-              <img key={idx} src={logo} alt="Marca parceira" className="h-10 md:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply flex-shrink-0" />
+              <img key={idx} src={logo} alt="Marca parceira" className="h-16 md:h-24 lg:h-28 w-auto max-w-[240px] object-contain mix-blend-multiply flex-shrink-0" />
             ))}
           </div>
         </div>
