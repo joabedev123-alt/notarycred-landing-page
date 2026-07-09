@@ -1,0 +1,299 @@
+{
+  "project": "NotaryCred",
+  "page": "Home Equity Hero",
+  "layoutReference": "hero idêntico ao print enviado: header escuro, hero em azul petróleo com imagem à direita, texto grande à esquerda, card de simulação sobreposto, benefícios em linha e bloco de confiança abaixo",
+  "theme": {
+    "colors": {
+      "navyDark": "#071827",
+      "navyHeader": "#0B1622",
+      "navyOverlay": "#061B2D",
+      "blueDark": "#0A2A42",
+      "blueAccent": "#0EA5E9",
+      "greenPrimary": "#17B85F",
+      "greenLight": "#45E07A",
+      "white": "#FFFFFF",
+      "textMuted": "#D4DEE8",
+      "textSoft": "#A8B7C6",
+      "border": "rgba(255,255,255,0.18)",
+      "cardBg": "rgba(6,27,45,0.78)",
+      "lightSection": "#F5F9FC",
+      "darkText": "#071827"
+    },
+    "fontFamily": "Inter, Manrope, Plus Jakarta Sans, sans-serif",
+    "borderRadius": {
+      "button": "10px",
+      "card": "18px",
+      "large": "24px"
+    },
+    "shadow": {
+      "soft": "0 18px 50px rgba(0,0,0,0.28)",
+      "card": "0 24px 80px rgba(0,0,0,0.35)"
+    }
+  },
+  "assets": {
+    "logo": {
+      "type": "image",
+      "position": "header-left",
+      "description": "Logo NotaryCred branco com ícone azul/verde conforme identidade da marca"
+    },
+    "heroImage": {
+      "type": "image",
+      "position": "right",
+      "description": "Casal adulto sorrindo sentado no sofá usando tablet dentro de casa moderna; imagem escurecida por overlay azul petróleo para integrar com o hero",
+      "style": {
+        "objectFit": "cover",
+        "objectPosition": "center right",
+        "overlay": "linear-gradient(90deg, #061B2D 0%, rgba(6,27,45,0.88) 38%, rgba(6,27,45,0.40) 68%, rgba(6,27,45,0.18) 100%)"
+      }
+    },
+    "simulationCardImage": {
+      "type": "image/illustration",
+      "description": "Casa moderna iluminada à noite com ícone linear verde de residência sobreposto"
+    }
+  },
+  "header": {
+    "height": "88px",
+    "background": "#0B1622",
+    "borderBottom": "1px solid rgba(255,255,255,0.10)",
+    "padding": "0 7%",
+    "logo": {
+      "text": "NotaryCred",
+      "showIcon": true,
+      "color": "#FFFFFF"
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "#home",
+        "active": true,
+        "underlineColor": "#17B85F"
+      },
+      {
+        "label": "Sobre Home Equity",
+        "href": "#sobre-home-equity"
+      },
+      {
+        "label": "Soluções",
+        "href": "#solucoes",
+        "hasDropdown": true
+      },
+      {
+        "label": "Como funciona",
+        "href": "#como-funciona"
+      },
+      {
+        "label": "Simulador",
+        "href": "#simulador"
+      },
+      {
+        "label": "Conteúdo",
+        "href": "#conteudo"
+      }
+    ],
+    "cta": {
+      "label": "Falar com especialista",
+      "href": "https://wa.me/5500000000000",
+      "background": "#17B85F",
+      "color": "#FFFFFF",
+      "hoverBackground": "#149E52"
+    }
+  },
+  "hero": {
+    "id": "home",
+    "minHeight": "780px",
+    "background": "#061B2D",
+    "position": "relative",
+    "contentMaxWidth": "1280px",
+    "padding": {
+      "desktop": "72px 7% 0",
+      "tablet": "56px 5% 0",
+      "mobile": "42px 22px 0"
+    },
+    "grid": {
+      "desktop": "1.05fr 0.95fr",
+      "gap": "48px",
+      "alignItems": "center"
+    },
+    "leftContent": {
+      "badge": {
+        "label": "HOME EQUITY",
+        "icon": "bi-check-circle",
+        "background": "rgba(14,165,233,0.08)",
+        "border": "1px solid rgba(14,165,233,0.28)",
+        "color": "#9EEBFF",
+        "borderRadius": "999px"
+      },
+      "title": {
+        "text": "Transforme o valor do seu imóvel em liberdade financeira.",
+        "highlight": "liberdade financeira.",
+        "fontSize": {
+          "desktop": "64px",
+          "tablet": "52px",
+          "mobile": "38px"
+        },
+        "lineHeight": "1.08",
+        "fontWeight": 800,
+        "color": "#FFFFFF",
+        "highlightColor": "#45E07A",
+        "maxWidth": "620px"
+      },
+      "subtitle": {
+        "text": "O Home Equity é uma solução segura e inteligente para quem quer realizar planos, investir ou reorganizar as finanças com as melhores taxas do mercado.",
+        "fontSize": {
+          "desktop": "20px",
+          "mobile": "17px"
+        },
+        "lineHeight": "1.55",
+        "color": "#D4DEE8",
+        "maxWidth": "640px"
+      },
+      "buttons": [
+        {
+          "label": "Simule seu Home Equity",
+          "href": "#simulador",
+          "variant": "primary",
+          "iconRight": "bi-arrow-right",
+          "background": "#17B85F",
+          "color": "#FFFFFF"
+        },
+        {
+          "label": "Falar com especialista",
+          "href": "https://wa.me/5500000000000",
+          "variant": "outline",
+          "iconRight": "bi-chat-left-text",
+          "background": "transparent",
+          "color": "#FFFFFF",
+          "border": "1px solid rgba(255,255,255,0.28)"
+        }
+      ],
+      "trustItems": [
+        {
+          "icon": "bi-shield-check",
+          "title": "Taxas competitivas",
+          "description": "As melhores do mercado"
+        },
+        {
+          "icon": "bi-cash-coin",
+          "title": "Até 60% do valor do imóvel",
+          "description": "Crédito com garantia real"
+        },
+        {
+          "icon": "bi-shield-lock",
+          "title": "Processo 100% seguro",
+          "description": "Transparência e agilidade"
+        }
+      ]
+    },
+    "rightContent": {
+      "image": {
+        "description": "Casal feliz usando tablet em casa, com fundo residencial elegante e escuro",
+        "placement": "absolute right top covering 54% of hero width on desktop",
+        "opacity": 0.82
+      },
+      "floatingSimulationCard": {
+        "position": {
+          "desktop": "right: 13%; top: 42%;",
+          "mobile": "relative"
+        },
+        "width": {
+          "desktop": "460px",
+          "mobile": "100%"
+        },
+        "background": "rgba(6,27,45,0.78)",
+        "backdropFilter": "blur(18px)",
+        "border": "1px solid rgba(255,255,255,0.22)",
+        "borderRadius": "18px",
+        "padding": "28px",
+        "shadow": "0 24px 80px rgba(0,0,0,0.35)",
+        "tag": {
+          "text": "Simulação personalizada",
+          "color": "#35D1E8"
+        },
+        "amount": {
+          "text": "Até R$ 750.000,00",
+          "color": "#FFFFFF",
+          "fontSize": "26px",
+          "fontWeight": 800
+        },
+        "rateLabel": "Com taxas a partir de",
+        "rate": {
+          "text": "1,49% a.m.",
+          "color": "#45E07A",
+          "fontSize": "30px",
+          "fontWeight": 800
+        },
+        "description": "Use o valor do seu imóvel para conquistar seus objetivos.",
+        "image": "Casa moderna iluminada com ícone de imóvel em verde"
+      }
+    },
+    "bottomFeatureBar": {
+      "position": "bottom over hero",
+      "background": "rgba(6,27,45,0.72)",
+      "border": "1px solid rgba(255,255,255,0.12)",
+      "borderRadius": "18px 18px 0 0",
+      "maxWidth": "1180px",
+      "items": [
+        {
+          "icon": "bi-shield-check",
+          "title": "Segurança jurídica",
+          "description": "Processos com certificação e total conformidade legal."
+        },
+        {
+          "icon": "bi-rocket-takeoff",
+          "title": "Agilidade",
+          "description": "Análise rápida e liberações eficientes."
+        },
+        {
+          "icon": "bi-calculator",
+          "title": "Flexibilidade",
+          "description": "Prazos longos e parcelas que cabem no seu planejamento."
+        },
+        {
+          "icon": "bi-people",
+          "title": "Atendimento consultivo",
+          "description": "Especialistas dedicados para as melhores soluções."
+        }
+      ]
+    }
+  },
+  "trustSection": {
+    "background": "#F5F9FC",
+    "padding": "54px 7% 64px",
+    "title": "Confiança que gera resultados",
+    "titleColor": "#071827",
+    "metrics": [
+      {
+        "icon": "bi-cash-stack",
+        "value": "+ R$ 2,8 bilhões",
+        "label": "em crédito liberado"
+      },
+      {
+        "icon": "bi-person-plus",
+        "value": "+ 18 mil",
+        "label": "clientes atendidos"
+      },
+      {
+        "icon": "bi-box-seam",
+        "value": "+ 1,5 mil",
+        "label": "parceiros imobiliários"
+      },
+      {
+        "icon": "bi-star",
+        "value": "4,9/5",
+        "label": "avaliação dos clientes"
+      }
+    ]
+  },
+  "responsiveRules": {
+    "desktop": "Header horizontal, hero em duas colunas, imagem à direita, card flutuante sobre a imagem, barra de benefícios sobreposta ao final do hero.",
+    "tablet": "Reduzir título, manter duas colunas se houver espaço; card de simulação menor.",
+    "mobile": "Header compacto, menu hamburguer, hero em coluna única, imagem como fundo com overlay mais escuro, botões empilhados, card de simulação abaixo do texto, benefícios em grid 1 coluna."
+  },
+  "implementationNotes": {
+    "framework": "React + TypeScript + Tailwind CSS",
+    "ui": "shadcn/ui",
+    "icons": "Bootstrap Icons ou Lucide React",
+    "animations": "Framer Motion com fade-up, stagger nos cards e hover suave nos botões",
+    "important": "Recriar o hero o mais próximo possível da imagem enviada, mantendo cores, espaçamento, estrutura, card flutuante e barra de benefícios. Trocar apenas imagens por assets profissionais compatíveis com Home Equity/NotaryCred."
+  }
+}

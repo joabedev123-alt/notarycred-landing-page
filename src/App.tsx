@@ -204,6 +204,48 @@ function App() {
         </div>
       </section>
 
+      {/* Confiança que gera resultados */}
+      <section className="bg-white py-16 border-b border-gray-100 relative z-20">
+        <div className="container mx-auto px-6">
+          <h3 className="text-2xl md:text-3xl font-extrabold text-center text-slate-800 mb-12">Confiança que gera resultados</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
+            
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+              <i className="bi bi-cash-coin text-4xl text-slate-700"></i>
+              <div>
+                <p className="text-2xl font-extrabold text-slate-800">+ R$ 2,8 bilhões</p>
+                <p className="text-sm text-slate-500 font-medium">em crédito liberado</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+              <i className="bi bi-person-plus text-4xl text-slate-700"></i>
+              <div>
+                <p className="text-2xl font-extrabold text-slate-800">+ 18 mil</p>
+                <p className="text-sm text-slate-500 font-medium">clientes atendidos</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+              <i className="bi bi-layers text-4xl text-slate-700"></i>
+              <div>
+                <p className="text-2xl font-extrabold text-slate-800">+ 1,5 mil</p>
+                <p className="text-sm text-slate-500 font-medium">parceiros imobiliários</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+              <i className="bi bi-star text-4xl text-slate-700"></i>
+              <div>
+                <p className="text-2xl font-extrabold text-slate-800">4,9/5</p>
+                <p className="text-sm text-slate-500 font-medium">avaliação dos clientes</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* 2.1 COMO FUNCIONA (Linha do Tempo Horizontal) */}
       <section id="como-funciona" className="py-20 lg:py-32 bg-white relative overflow-hidden border-b border-gray-100">
         <div className="container mx-auto px-6 max-w-7xl">
