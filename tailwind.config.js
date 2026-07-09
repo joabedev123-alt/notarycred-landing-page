@@ -7,11 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'nc-blue': '#002E5D', // Azul institucional escuro
-        'nc-blue-light': '#005BBB', // Azul mais claro
-        'nc-gold': '#C5A866', // Dourado
-        'nc-gold-light': '#E0CB94', // Dourado mais claro
-        'nc-gray': '#F7F8F9', // Cinza muito claro
+        'nc-navy-dark': '#161F29',
+        'nc-navy-blue': '#0C3654',
+        'nc-tech-blue': '#0F7FB6',
+        'nc-trust-green': '#189E4F',
+        'nc-teal-title': '#158E86',
+        'nc-text-gray': '#4F5E68',
+        'nc-light-blue': '#85C1CC',
+        'nc-soft-bg': '#EBF7F7',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
