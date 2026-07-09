@@ -95,7 +95,7 @@ function App() {
               O Home Equity é uma solução segura e inteligente para quem quer realizar planos, investir ou reorganizar as finanças com as melhores taxas do mercado.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mb-12">
               <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-nc-trust-green text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-nc-trust-green/90 transition-all duration-300 shadow-xl flex items-center justify-center gap-2">
                 Simule seu Home Equity <i className="bi bi-arrow-right"></i>
               </a>
@@ -105,7 +105,7 @@ function App() {
             </div>
 
             {/* Trust points */}
-            <div className="flex flex-col sm:flex-row gap-6 lg:gap-10 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-10 justify-center lg:justify-start">
                <div className="flex items-start gap-3">
                  <i className="bi bi-shield-check text-nc-trust-green mt-0.5 text-lg"></i>
                  <div className="text-left">
@@ -141,7 +141,7 @@ function App() {
              </div>
 
              {/* Floating Card - Simulação */}
-             <div className="bg-[#111A28]/80 backdrop-blur-xl p-8 rounded-3xl border border-white/10 shadow-2xl relative w-full max-w-md lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 lg:max-w-[480px] overflow-hidden flex">
+             <div className="bg-[#111A28]/80 backdrop-blur-xl p-6 md:p-8 rounded-3xl border border-white/10 shadow-2xl relative w-full max-w-md lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 lg:max-w-[480px] overflow-hidden flex">
                <div className="flex-1 relative z-10">
                  <p className="text-nc-tech-blue text-sm font-bold mb-4">Simulação personalizada</p>
                  <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-2">Até R$ 750.000,00</h3>
