@@ -97,7 +97,7 @@ function App() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-white/10">
               <div className="absolute inset-0 bg-gradient-to-t from-nc-blue/80 via-transparent to-transparent z-10 hidden md:block"></div>
-              <img src="/broker-contract.png" alt="Corretor assinando contrato" className="object-cover w-full h-full" />
+              <img src="/couple-couch.png" alt="Casal feliz usando tablet no sofá" className="object-cover w-full h-full" />
             </div>
             
             <div className="mt-4 md:mt-0 md:absolute md:bottom-8 md:left-8 md:right-8 bg-white/10 backdrop-blur-xl p-3 md:p-5 rounded-2xl border border-white/20 z-20 flex items-center justify-center md:justify-start gap-3 md:gap-5 w-full md:w-auto shadow-lg shadow-black/20">
