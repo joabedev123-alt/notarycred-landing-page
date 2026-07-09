@@ -99,6 +99,29 @@ function App() {
         </div>
       </section>
 
+      {/* 2.5 MARCAS PARCEIRAS */}
+      <section className="py-8 bg-white border-b border-gray-100 overflow-hidden">
+        <div className="container mx-auto px-6 mb-6">
+          <p className="text-center text-sm font-semibold text-slate-400 uppercase tracking-wider">Marcas que confiam na NotaryCred</p>
+        </div>
+        
+        <div className="relative flex w-full overflow-hidden">
+          <div className="flex w-max animate-marquee gap-10 md:gap-20 items-center whitespace-nowrap pl-10 md:pl-20">
+            {[...Array(2)].flatMap((_, i) => [
+              '/conx.jpg',
+              '/geronimo.png',
+              '/mrv.jpg',
+              '/or.jpg',
+              '/patrimonio.jpg',
+              '/plano.png',
+              '/vic.jpg'
+            ]).map((logo, idx) => (
+              <img key={idx} src={logo} alt="Marca parceira" className="h-10 md:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply flex-shrink-0" />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 3. BLOCO DE SOLUÇÕES RÁPIDAS */}
       <section className="py-20 lg:py-32 bg-nc-soft-bg relative">
         <div className="container mx-auto px-6">
