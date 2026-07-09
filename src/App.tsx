@@ -154,7 +154,7 @@ function App() {
         
         <div className="relative flex w-full overflow-hidden">
           <div className="flex w-max animate-marquee gap-10 md:gap-20 items-center whitespace-nowrap pl-10 md:pl-20">
-            {[...Array(2)].flatMap((_, i) => [
+            {[...Array(2)].flatMap(() => [
               '/conx.jpg',
               '/geronimo.png',
               '/mrv.jpg',
