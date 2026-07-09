@@ -67,11 +67,11 @@ function App() {
       </header>
 
       {/* 2. HERO PRINCIPAL */}
-      <section id="inicio" className="pt-36 lg:pt-0 bg-nc-navy-dark text-white relative flex flex-col">
+      <section id="inicio" className="pt-36 lg:pt-0 bg-[#061B2D] text-white relative flex flex-col">
         {/* Fundo imagem na direita (Desktop) */}
         <div className="absolute inset-0 z-0 hidden lg:block">
-           <div className="absolute inset-0 bg-nc-navy-dark z-10 w-[55%]"></div>
-           <div className="absolute inset-0 bg-gradient-to-r from-nc-navy-dark via-nc-navy-dark/90 to-transparent z-10 w-[70%]"></div>
+           <div className="absolute inset-0 bg-[#061B2D] z-10 w-[55%]"></div>
+           <div className="absolute inset-0 bg-gradient-to-r from-[#061B2D] via-[#061B2D]/90 to-transparent z-10 w-[70%]"></div>
            <img src="/couple-couch.png" alt="Casal feliz usando tablet no sofá" className="absolute right-0 top-0 h-full w-[55%] object-cover object-right z-0" />
         </div>
 
@@ -82,49 +82,49 @@ function App() {
             className="lg:w-[55%] xl:w-[60%]"
           >
             {/* Badge HOME EQUITY */}
-            <div className="inline-flex items-center gap-2 border border-white/20 rounded-full px-4 py-1.5 mb-8 bg-white/5 backdrop-blur-sm">
-              <i className="bi bi-check-circle text-nc-tech-blue text-sm"></i>
-              <span className="text-xs font-bold tracking-widest text-slate-200">HOME EQUITY</span>
+            <div className="inline-flex items-center gap-2 border border-[#0EA5E9]/30 rounded-full px-4 py-1.5 mb-8 bg-[#0EA5E9]/10 backdrop-blur-sm">
+              <i className="bi bi-check-circle text-[#9EEBFF] text-sm"></i>
+              <span className="text-xs font-bold tracking-widest text-[#9EEBFF]">HOME EQUITY</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.08] mb-6 text-white max-w-[620px]">
               Transforme o valor<br/>do seu imóvel em<br/>
-              <span className="text-nc-trust-green">liberdade financeira.</span>
+              <span className="text-[#45E07A]">liberdade financeira.</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
+            <p className="text-[17px] lg:text-[20px] text-[#D4DEE8] mb-10 leading-[1.55] font-light max-w-[640px] mx-auto lg:mx-0">
               O Home Equity é uma solução segura e inteligente para quem quer realizar planos, investir ou reorganizar as finanças com as melhores taxas do mercado.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mb-12">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-nc-trust-green text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-nc-trust-green/90 transition-all duration-300 shadow-xl flex items-center justify-center gap-2">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-[#17B85F] text-white px-8 py-4 rounded-[10px] font-bold text-lg hover:bg-[#149E52] transition-all duration-300 shadow-[0_18px_50px_rgba(0,0,0,0.28)] flex items-center justify-center gap-2">
                 Simule seu Home Equity <i className="bi bi-arrow-right"></i>
               </a>
-              <a href="#solucoes" className="bg-transparent border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2">
-                Falar com especialista <i className="bi bi-chat-dots"></i>
+              <a href="#solucoes" className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-[10px] font-bold text-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2">
+                Falar com especialista <i className="bi bi-chat-left-text"></i>
               </a>
             </div>
 
             {/* Trust points */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-10 justify-center lg:justify-start">
                <div className="flex items-start gap-3">
-                 <i className="bi bi-shield-check text-nc-trust-green mt-0.5 text-lg"></i>
+                 <i className="bi bi-shield-check text-[#17B85F] mt-0.5 text-lg"></i>
                  <div className="text-left">
                    <p className="font-bold text-sm text-white">Taxas competitivas</p>
-                   <p className="text-xs text-slate-400 font-light">As melhores do mercado</p>
+                   <p className="text-xs text-[#A8B7C6] font-light">As melhores do mercado</p>
                  </div>
                </div>
                <div className="flex items-start gap-3">
-                 <i className="bi bi-graph-up-arrow text-nc-trust-green mt-0.5 text-lg"></i>
+                 <i className="bi bi-cash-coin text-[#17B85F] mt-0.5 text-lg"></i>
                  <div className="text-left">
                    <p className="font-bold text-sm text-white">Até 60% do valor do imóvel</p>
-                   <p className="text-xs text-slate-400 font-light">Crédito com garantia real</p>
+                   <p className="text-xs text-[#A8B7C6] font-light">Crédito com garantia real</p>
                  </div>
                </div>
                <div className="flex items-start gap-3">
-                 <i className="bi bi-check-circle text-nc-trust-green mt-0.5 text-lg"></i>
+                 <i className="bi bi-shield-lock text-[#17B85F] mt-0.5 text-lg"></i>
                  <div className="text-left">
                    <p className="font-bold text-sm text-white">Processo 100% seguro</p>
-                   <p className="text-xs text-slate-400 font-light">Transparência e agilidade</p>
+                   <p className="text-xs text-[#A8B7C6] font-light">Transparência e agilidade</p>
                  </div>
                </div>
             </div>
@@ -141,21 +141,21 @@ function App() {
              </div>
 
              {/* Floating Card - Simulação */}
-             <div className="bg-[#111A28]/80 backdrop-blur-xl p-6 md:p-8 rounded-3xl border border-white/10 shadow-2xl relative w-full max-w-md lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 lg:max-w-[480px] overflow-hidden flex">
+             <div className="bg-[#061B2D]/80 backdrop-blur-[18px] p-6 md:p-[28px] rounded-[18px] border border-white/20 shadow-[0_24px_80px_rgba(0,0,0,0.35)] relative w-full max-w-md lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-[13%] lg:max-w-[460px] overflow-hidden flex">
                <div className="flex-1 relative z-10">
-                 <p className="text-nc-tech-blue text-sm font-bold mb-4">Simulação personalizada</p>
-                 <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-2">Até R$ 750.000,00</h3>
-                 <p className="text-xs text-slate-300 mb-1 mt-4">Com taxas a partir de</p>
-                 <p className="text-3xl font-extrabold text-nc-trust-green mb-6">1,49% a.m.</p>
-                 <p className="text-xs text-slate-400 leading-relaxed max-w-[200px]">Use o valor do seu imóvel para conquistar seus objetivos.</p>
+                 <p className="text-[#35D1E8] text-sm font-bold mb-4">Simulação personalizada</p>
+                 <h3 className="text-[26px] font-[800] text-[#FFFFFF] mb-2">Até R$ 750.000,00</h3>
+                 <p className="text-xs text-[#D4DEE8] mb-1 mt-4">Com taxas a partir de</p>
+                 <p className="text-[30px] font-[800] text-[#45E07A] mb-6">1,49% a.m.</p>
+                 <p className="text-xs text-[#A8B7C6] leading-relaxed max-w-[200px]">Use o valor do seu imóvel para conquistar seus objetivos.</p>
                </div>
                
-               <div className="absolute right-0 bottom-0 top-0 w-1/2 opacity-70">
+               <div className="absolute right-0 bottom-0 top-0 w-1/2 opacity-80">
                  <img src="/simple-house.png" className="w-full h-full object-cover object-left" alt="Casa" />
-                 <div className="absolute inset-0 bg-gradient-to-r from-[#111A28] via-[#111A28]/80 to-transparent"></div>
+                 <div className="absolute inset-0 bg-gradient-to-r from-[#061B2D] via-[#061B2D]/80 to-transparent"></div>
                  {/* Icon inside house graphic */}
                  <div className="absolute right-8 top-1/2 -translate-y-1/2 opacity-80">
-                    <i className="bi bi-house text-[80px] text-nc-trust-green/30"></i>
+                    <i className="bi bi-house text-[80px] text-[#17B85F]/50"></i>
                  </div>
                </div>
              </div>
@@ -163,39 +163,39 @@ function App() {
         </div>
 
         {/* Benefits Bottom Bar */}
-        <div className="border-t border-white/5 bg-[#0F1724] relative z-20">
+        <div className="border-t border-white/10 bg-[#061B2D]/70 backdrop-blur-md relative z-20 rounded-t-[18px] max-w-[1180px] mx-auto">
           <div className="container mx-auto px-6 py-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-white/5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
               
               <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-shield-check text-4xl text-nc-tech-blue"></i>
+                <i className="bi bi-shield-check text-4xl text-[#0EA5E9]"></i>
                 <div className="text-left">
                   <h4 className="text-white font-bold mb-1">Segurança jurídica</h4>
-                  <p className="text-xs text-slate-400 leading-relaxed">Processos com certificação e total conformidade legal.</p>
+                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Processos com certificação e total conformidade legal.</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-rocket text-4xl text-nc-tech-blue"></i>
+                <i className="bi bi-rocket-takeoff text-4xl text-[#0EA5E9]"></i>
                 <div className="text-left">
                   <h4 className="text-white font-bold mb-1">Agilidade</h4>
-                  <p className="text-xs text-slate-400 leading-relaxed">Análise rápida e liberações eficientes.</p>
+                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Análise rápida e liberações eficientes.</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-calculator text-4xl text-nc-tech-blue"></i>
+                <i className="bi bi-calculator text-4xl text-[#0EA5E9]"></i>
                 <div className="text-left">
                   <h4 className="text-white font-bold mb-1">Flexibilidade</h4>
-                  <p className="text-xs text-slate-400 leading-relaxed">Prazos longos e parcelas que cabem no seu planejamento.</p>
+                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Prazos longos e parcelas que cabem no seu planejamento.</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 lg:px-6 pt-4 md:pt-0">
-                <i className="bi bi-people text-4xl text-nc-tech-blue"></i>
+                <i className="bi bi-people text-4xl text-[#0EA5E9]"></i>
                 <div className="text-left">
                   <h4 className="text-white font-bold mb-1">Atendimento consultivo</h4>
-                  <p className="text-xs text-slate-400 leading-relaxed">Especialistas dedicados para as melhores soluções.</p>
+                  <p className="text-xs text-[#A8B7C6] leading-relaxed">Especialistas dedicados para as melhores soluções.</p>
                 </div>
               </div>
 
@@ -205,15 +205,15 @@ function App() {
       </section>
 
       {/* Confiança que gera resultados */}
-      <section className="bg-white py-16 border-b border-gray-100 relative z-20">
+      <section className="bg-[#F5F9FC] py-16 border-b border-gray-100 relative z-20">
         <div className="container mx-auto px-6">
-          <h3 className="text-2xl md:text-3xl font-extrabold text-center text-slate-800 mb-12">Confiança que gera resultados</h3>
+          <h3 className="text-2xl md:text-3xl font-extrabold text-center text-[#071827] mb-12">Confiança que gera resultados</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-              <i className="bi bi-cash-coin text-4xl text-slate-700"></i>
+              <i className="bi bi-cash-stack text-4xl text-slate-700"></i>
               <div>
-                <p className="text-2xl font-extrabold text-slate-800">+ R$ 2,8 bilhões</p>
+                <p className="text-2xl font-extrabold text-[#071827]">+ R$ 2,8 bilhões</p>
                 <p className="text-sm text-slate-500 font-medium">em crédito liberado</p>
               </div>
             </div>
@@ -221,15 +221,15 @@ function App() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
               <i className="bi bi-person-plus text-4xl text-slate-700"></i>
               <div>
-                <p className="text-2xl font-extrabold text-slate-800">+ 18 mil</p>
+                <p className="text-2xl font-extrabold text-[#071827]">+ 18 mil</p>
                 <p className="text-sm text-slate-500 font-medium">clientes atendidos</p>
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-              <i className="bi bi-layers text-4xl text-slate-700"></i>
+              <i className="bi bi-box-seam text-4xl text-slate-700"></i>
               <div>
-                <p className="text-2xl font-extrabold text-slate-800">+ 1,5 mil</p>
+                <p className="text-2xl font-extrabold text-[#071827]">+ 1,5 mil</p>
                 <p className="text-sm text-slate-500 font-medium">parceiros imobiliários</p>
               </div>
             </div>
@@ -237,7 +237,7 @@ function App() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
               <i className="bi bi-star text-4xl text-slate-700"></i>
               <div>
-                <p className="text-2xl font-extrabold text-slate-800">4,9/5</p>
+                <p className="text-2xl font-extrabold text-[#071827]">4,9/5</p>
                 <p className="text-sm text-slate-500 font-medium">avaliação dos clientes</p>
               </div>
             </div>
