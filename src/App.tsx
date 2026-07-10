@@ -27,8 +27,8 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* 1. HEADER */}
-      <header className={`fixed top-0 w-full bg-nc-navy-dark/95 backdrop-blur-md z-50 shadow-sm border-b border-white/10 transition-transform duration-500 ease-in-out ${isScrolled ? '-translate-y-full' : 'translate-y-0'}`}>
-        <div className="container mx-auto px-6 h-24 md:h-32 flex items-center justify-between">
+      <header className={`fixed top-0 w-full bg-transparent z-50 transition-transform duration-500 ease-in-out ${isScrolled ? '-translate-y-full' : 'translate-y-0'}`}>
+        <div className="container mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img src="/logo04.png" alt="NotaryCred" className="h-[80px] md:h-[120px] w-auto object-contain" />
           </div>
@@ -67,18 +67,17 @@ function App() {
       </header>
 
       {/* 2. HERO PRINCIPAL */}
-      <section id="inicio" className="pt-36 pb-16 lg:pt-48 lg:pb-24 bg-nc-navy-dark text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-nc-tech-blue/20 to-transparent pointer-events-none"></div>
+      <section id="inicio" className="pt-36 pb-32 lg:pt-48 lg:pb-40 bg-nc-navy-dark text-white relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/hero-principal1.png')" }}>
         <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 relative z-10">
           <motion.div 
             initial="hidden" animate="visible" variants={fadeUp}
             className="lg:w-1/2"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Regularize seu imóvel com mais <span className="text-nc-trust-green">facilidade, segurança e inteligência</span>
+              Transforme seu imóvel em crédito e conquiste sua escritura com <span className="text-nc-trust-green">segurança e agilidade</span>.
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
-              Transforme a burocracia do seu imóvel em liquidez. Regularize, invista e acesse as melhores taxas do mercado de forma ágil e segura.
+              Usamos tecnologia e especialistas notariais e registrais para liberar o crédito que regulariza seu imóvel sem complicação.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -93,23 +92,52 @@ function App() {
           
           <motion.div 
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:w-1/2 relative"
+            className="lg:w-1/2 relative flex justify-center lg:justify-end"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-white/10">
-              <div className="absolute inset-0 bg-gradient-to-t from-nc-blue/80 via-transparent to-transparent z-10 hidden md:block"></div>
-              <img src="/broker-contract.png" alt="Corretor assinando contrato" className="object-cover w-full h-full" />
-            </div>
-            
-            <div className="mt-4 md:mt-0 md:absolute md:bottom-8 md:left-8 md:right-8 bg-white/10 backdrop-blur-xl p-3 md:p-5 rounded-2xl border border-white/20 z-20 flex items-center justify-center md:justify-start gap-3 md:gap-5 w-full md:w-auto shadow-lg shadow-black/20">
-              <div className="w-10 h-10 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center text-white backdrop-blur-md flex-shrink-0">
-                <i className="bi bi-shield-check text-lg md:text-2xl"></i>
+            <div className="mt-4 md:mt-0 bg-white/10 backdrop-blur-xl p-6 rounded-2xl border border-white/20 z-20 flex items-center justify-center md:justify-start gap-4 shadow-2xl shadow-black/40 lg:mr-8 mb-8 lg:mb-0">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center text-white backdrop-blur-md flex-shrink-0">
+                <i className="bi bi-shield-check text-2xl md:text-3xl"></i>
               </div>
               <div className="text-left">
-                <p className="text-[10px] md:text-sm text-blue-100 font-medium tracking-wide">Certificação Jurídica</p>
-                <p className="text-sm md:text-xl font-bold text-white leading-tight">Processo 100% Seguro</p>
+                <p className="text-xs md:text-sm text-blue-100 font-medium tracking-wide">Certificação Jurídica</p>
+                <p className="text-lg md:text-2xl font-bold text-white leading-tight">Processo 100% Seguro</p>
               </div>
             </div>
           </motion.div>
+        </div>
+
+        {/* FEATURE BAR */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1180px] bg-[#061B2D]/90 backdrop-blur-xl border border-white/10 rounded-t-[18px] z-20 px-6 py-6 md:px-8 hidden md:block shadow-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
+            <div className="flex items-start gap-4 p-4 md:px-6">
+              <i className="bi bi-shield-check text-3xl text-[#35D1E8]"></i>
+              <div>
+                <h4 className="font-bold text-white text-sm mb-1">Segurança jurídica</h4>
+                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Processos com certificação e total conformidade legal.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4 p-4 md:px-6">
+              <i className="bi bi-rocket-takeoff text-3xl text-[#35D1E8]"></i>
+              <div>
+                <h4 className="font-bold text-white text-sm mb-1">Agilidade</h4>
+                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Análise rápida e liberações eficientes.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4 p-4 md:px-6">
+              <i className="bi bi-calculator text-3xl text-[#35D1E8]"></i>
+              <div>
+                <h4 className="font-bold text-white text-sm mb-1">Flexibilidade</h4>
+                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Prazos longos e parcelas que cabem no seu planejamento.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4 p-4 md:px-6">
+              <i className="bi bi-people text-3xl text-[#35D1E8]"></i>
+              <div>
+                <h4 className="font-bold text-white text-sm mb-1">Atendimento consultivo</h4>
+                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Especialistas dedicados para as melhores soluções.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -147,23 +175,23 @@ function App() {
       </section>
 
       {/* 2.5 MARCAS PARCEIRAS */}
-      <section className="py-8 bg-white border-b border-gray-100 overflow-hidden">
-        <div className="container mx-auto px-6 mb-6">
+      <section className="py-24 md:py-32 bg-white border-b border-gray-100 overflow-hidden">
+        <div className="container mx-auto px-6 mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nc-teal-title tracking-tight text-center">Marcas que confiam na NotaryCred</h2>
         </div>
         
         <div className="relative flex w-full overflow-hidden">
-          <div className="flex w-max animate-marquee gap-10 md:gap-20 items-center whitespace-nowrap pl-10 md:pl-20">
+          <div className="flex w-max animate-marquee gap-16 md:gap-32 items-center whitespace-nowrap pl-16 md:pl-32">
             {[...Array(2)].flatMap(() => [
-              '/conx.jpg',
-              '/geronimo.png',
-              '/mrv.jpg',
-              '/or.jpg',
-              '/patrimonio.jpg',
-              '/plano.png',
-              '/vic.jpg'
+              '/logos/7.png',
+              '/logos/8.png',
+              '/logos/9.png',
+              '/logos/10.png',
+              '/logos/11.png',
+              '/logos/12.png',
+              '/logos/13.png'
             ]).map((logo, idx) => (
-              <img key={idx} src={logo} alt="Marca parceira" className="h-10 md:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply flex-shrink-0" />
+              <img key={idx} src={logo} alt="Marca parceira" className="h-24 md:h-36 w-auto max-w-[320px] object-contain mix-blend-multiply flex-shrink-0" />
             ))}
           </div>
         </div>
