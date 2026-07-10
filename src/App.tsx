@@ -67,7 +67,8 @@ function App() {
       </header>
 
       {/* 2. HERO PRINCIPAL */}
-      <section id="inicio" className="pt-36 pb-32 lg:pt-48 lg:pb-40 bg-nc-navy-dark text-white relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/hero-principal1.png')" }}>
+      {/* 2. HERO PRINCIPAL */}
+      <section id="inicio" className="pt-36 pb-56 sm:pb-32 lg:pt-48 lg:pb-40 bg-nc-navy-dark text-white relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/hero-principal1.png')" }}>
         <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 relative z-10">
           <motion.div 
             initial="hidden" animate="visible" variants={fadeUp}
@@ -81,10 +82,10 @@ function App() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-white text-nc-navy-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-xl flex items-center justify-center gap-2">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="bg-white text-nc-navy-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-xl flex items-center justify-center gap-2 text-center">
                 Fale com um Especialista <i className="bi bi-arrow-right"></i>
               </a>
-              <a href="#solucoes" className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
+              <a href="#solucoes" className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center text-center">
                 Conheça as Soluções
               </a>
             </div>
@@ -94,47 +95,47 @@ function App() {
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:w-1/2 relative flex justify-center lg:justify-end"
           >
-            <div className="mt-4 md:mt-0 bg-white/10 backdrop-blur-xl p-6 rounded-2xl border border-white/20 z-20 flex items-center justify-center md:justify-start gap-4 shadow-2xl shadow-black/40 lg:mr-8 mb-8 lg:mb-0">
-              <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center text-white backdrop-blur-md flex-shrink-0">
+            <div className="mt-4 md:mt-0 bg-white/10 backdrop-blur-xl p-5 md:p-6 rounded-2xl border border-white/20 z-20 flex items-center justify-center md:justify-start gap-4 shadow-2xl shadow-black/40 lg:mr-8 mb-8 lg:mb-0">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center text-white backdrop-blur-md flex-shrink-0">
                 <i className="bi bi-shield-check text-2xl md:text-3xl"></i>
               </div>
               <div className="text-left">
                 <p className="text-xs md:text-sm text-blue-100 font-medium tracking-wide">Certificação Jurídica</p>
-                <p className="text-lg md:text-2xl font-bold text-white leading-tight">Processo 100% Seguro</p>
+                <p className="text-base md:text-2xl font-bold text-white leading-tight">Processo 100% Seguro</p>
               </div>
             </div>
           </motion.div>
         </div>
 
         {/* FEATURE BAR */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1180px] bg-[#061B2D]/90 backdrop-blur-xl border border-white/10 rounded-t-[18px] z-20 px-6 py-6 md:px-8 hidden md:block shadow-2xl">
-          <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
-            <div className="flex items-start gap-4 p-4 md:px-6">
-              <i className="bi bi-shield-check text-3xl text-[#35D1E8]"></i>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1180px] bg-[#061B2D]/90 backdrop-blur-xl border border-white/10 rounded-t-[18px] z-20 px-4 py-4 md:px-8 shadow-2xl">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-2 md:gap-y-0 lg:divide-x divide-white/10">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 md:gap-4 p-2 md:px-6">
+              <i className="bi bi-shield-check text-2xl md:text-3xl text-[#35D1E8]"></i>
               <div>
-                <h4 className="font-bold text-white text-sm mb-1">Segurança jurídica</h4>
-                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Processos com certificação e total conformidade legal.</p>
+                <h4 className="font-bold text-white text-[11px] md:text-sm mb-1">Segurança jurídica</h4>
+                <p className="hidden sm:block text-xs text-blue-100/70 leading-relaxed font-light">Processos com certificação e total conformidade legal.</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-4 md:px-6">
-              <i className="bi bi-rocket-takeoff text-3xl text-[#35D1E8]"></i>
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 md:gap-4 p-2 md:px-6">
+              <i className="bi bi-rocket-takeoff text-2xl md:text-3xl text-[#35D1E8]"></i>
               <div>
-                <h4 className="font-bold text-white text-sm mb-1">Agilidade</h4>
-                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Análise rápida e liberações eficientes.</p>
+                <h4 className="font-bold text-white text-[11px] md:text-sm mb-1">Agilidade</h4>
+                <p className="hidden sm:block text-xs text-blue-100/70 leading-relaxed font-light">Análise rápida e liberações eficientes.</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-4 md:px-6">
-              <i className="bi bi-calculator text-3xl text-[#35D1E8]"></i>
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 md:gap-4 p-2 md:px-6">
+              <i className="bi bi-calculator text-2xl md:text-3xl text-[#35D1E8]"></i>
               <div>
-                <h4 className="font-bold text-white text-sm mb-1">Flexibilidade</h4>
-                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Prazos longos e parcelas que cabem no seu planejamento.</p>
+                <h4 className="font-bold text-white text-[11px] md:text-sm mb-1">Flexibilidade</h4>
+                <p className="hidden sm:block text-xs text-blue-100/70 leading-relaxed font-light">Prazos longos e parcelas que cabem no planejamento.</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-4 md:px-6">
-              <i className="bi bi-people text-3xl text-[#35D1E8]"></i>
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 md:gap-4 p-2 md:px-6">
+              <i className="bi bi-people text-2xl md:text-3xl text-[#35D1E8]"></i>
               <div>
-                <h4 className="font-bold text-white text-sm mb-1">Atendimento consultivo</h4>
-                <p className="text-xs text-blue-100/70 leading-relaxed font-light">Especialistas dedicados para as melhores soluções.</p>
+                <h4 className="font-bold text-white text-[11px] md:text-sm mb-1">Atendimento consultivo</h4>
+                <p className="hidden sm:block text-xs text-blue-100/70 leading-relaxed font-light">Especialistas dedicados para as melhores soluções.</p>
               </div>
             </div>
           </div>
