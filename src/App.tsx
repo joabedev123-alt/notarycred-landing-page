@@ -389,10 +389,10 @@ function App() {
                       <h4 className="text-lg text-white font-bold">NotaryCred</h4>
                       <p className="text-nc-text-gray text-sm">Garantia de Imóvel</p>
                     </div>
-                    <span className="text-nc-primary-blue font-black text-2xl">1.30%</span>
+                    <span className="text-[#189E4F] font-black text-2xl">1,30%</span>
                   </div>
                   <div className="w-full bg-slate-800 rounded-full h-3">
-                    <div className="bg-nc-primary-blue h-3 rounded-full shadow-[0_0_10px_rgba(24,158,79,0.5)]" style={{ width: '15%' }}></div>
+                    <div className="bg-[#189E4F] h-3 rounded-full shadow-[0_0_10px_rgba(24,158,79,0.5)]" style={{ width: '15%' }}></div>
                   </div>
                 </div>
                 
@@ -403,10 +403,10 @@ function App() {
                       <h4 className="text-lg text-white font-bold">Empréstimo Pessoal</h4>
                       <p className="text-nc-text-gray text-sm">Banco tradicional</p>
                     </div>
-                    <span className="text-nc-tech-blue font-bold text-xl">6.47%</span>
+                    <span className="text-orange-500 font-bold text-xl">6,47%</span>
                   </div>
                   <div className="w-full bg-slate-800 rounded-full h-3">
-                    <div className="bg-nc-tech-blue h-3 rounded-full" style={{ width: '45%' }}></div>
+                    <div className="bg-orange-500 h-3 rounded-full" style={{ width: '45%' }}></div>
                   </div>
                 </div>
                 
@@ -417,16 +417,16 @@ function App() {
                       <h4 className="text-lg text-white font-bold">Cartão Rotativo</h4>
                       <p className="text-nc-text-gray text-sm">Crédito rotativo</p>
                     </div>
-                    <span className="text-nc-cyan-blue font-bold text-xl">14.06%</span>
+                    <span className="text-red-500 font-bold text-xl">14,06%</span>
                   </div>
                   <div className="w-full bg-slate-800 rounded-full h-3">
-                    <div className="bg-nc-cyan-blue h-3 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-red-500 h-3 rounded-full" style={{ width: '90%' }}></div>
                   </div>
                 </div>
               </div>
               
-              <div className="mt-12 bg-nc-primary-blue/10 border border-nc-primary-blue/20 rounded-xl p-5 text-center">
-                <p className="text-nc-primary-blue text-base font-bold">Economia de até 78% escolhendo NotaryCred</p>
+              <div className="mt-12 bg-[#189E4F]/10 border border-[#189E4F]/20 rounded-xl p-5 text-center">
+                <p className="text-[#189E4F] text-base font-bold">Economia de até 78% escolhendo NotaryCred</p>
               </div>
             </div>
           </motion.div>
