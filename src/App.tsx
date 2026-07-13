@@ -308,7 +308,7 @@ function App() {
               </div>
 
               <a href="#solucoes" className="inline-flex items-center gap-2 bg-nc-primary-blue text-white px-8 py-4 rounded-full font-bold hover:bg-nc-tech-blue transition-colors shadow-lg shadow-nc-primary-blue/30">
-                Conheça o Mordomo <i className="bi bi-arrow-right"></i>
+                Fale com um especialista <i className="bi bi-arrow-right"></i>
               </a>
             </div>
           </motion.div>
