@@ -423,7 +423,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="mt-12 bg-[#189E4F] rounded-xl p-5 text-center shadow-[0_4px_20px_rgba(24,158,79,0.4)]">
+              <div className="mt-12 bg-nc-primary-blue rounded-xl p-5 text-center shadow-[0_4px_20px_rgba(0,87,184,0.4)]">
                 <p className="text-white text-lg md:text-xl font-bold tracking-wide">Economia de até 78% escolhendo NotaryCred</p>
               </div>
             </div>
