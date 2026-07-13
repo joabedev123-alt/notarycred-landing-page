@@ -7,17 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        'nc-navy-dark': '#161F29',
-        'nc-navy-blue': '#0C3654',
-        'nc-tech-blue': '#0F7FB6',
-        'nc-trust-green': '#189E4F',
-        'nc-teal-title': '#158E86',
-        'nc-text-gray': '#4F5E68',
-        'nc-light-blue': '#85C1CC',
-        'nc-soft-bg': '#EBF7F7',
+        'nc-navy-dark': '#0B1F33',
+        'nc-navy-blue': '#0A3A63',
+        'nc-primary-blue': '#0057B8',
+        'nc-tech-blue': '#1286D8',
+        'nc-cyan-blue': '#00A9E8',
+        'nc-light-blue': '#7CC7F2',
+        'nc-ice-blue': '#EAF6FF',
+        'nc-soft-bg': '#F6FBFF',
+        'nc-text-dark': '#102A43',
+        'nc-text-gray': '#5F6F7E',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
       },
       keyframes: {
         marquee: {
