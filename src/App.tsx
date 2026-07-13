@@ -366,7 +366,7 @@ function App() {
         <div className="container mx-auto px-6 mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nc-navy-blue tracking-tight text-center flex flex-col md:flex-row items-center justify-center gap-3">
             Marcas que confiam na 
-            <img src="/logo03.png" alt="NotaryCred" className="h-10 md:h-14 lg:h-16 w-auto object-contain" />
+            <img src="/logo03.png" alt="NotaryCred" className="h-16 md:h-20 lg:h-24 w-auto object-contain" />
           </h2>
         </div>
         
