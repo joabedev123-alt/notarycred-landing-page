@@ -549,20 +549,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
-                <div 
-                  className="h-16 w-64 bg-nc-primary-blue"
-                  style={{
-                    WebkitMaskImage: 'url(/logo04.png)',
-                    WebkitMaskSize: 'contain',
-                    WebkitMaskRepeat: 'no-repeat',
-                    WebkitMaskPosition: 'left center',
-                    maskImage: 'url(/logo04.png)',
-                    maskSize: 'contain',
-                    maskRepeat: 'no-repeat',
-                    maskPosition: 'left center'
-                  }}
-                  aria-label="NotaryCred Logo"
-                ></div>
+                <img src="/logo04.png" alt="NotaryCred" className="h-[60px] md:h-[80px] w-auto object-contain" />
               </div>
               <p className="text-nc-text-gray text-base md:text-lg mb-6">A nova forma de fazer crédito com escritura pública.</p>
               <div className="flex gap-4">
