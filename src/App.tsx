@@ -75,7 +75,7 @@ function App() {
             className="lg:w-1/2"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Transforme seu imóvel em crédito e conquiste sua escritura com <span className="text-nc-primary-blue">segurança e agilidade</span>.
+              Transforme seu imóvel em crédito e conquiste sua escritura com <span className="text-nc-primary-blue">segurança e agilidade.</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-normal max-w-xl mx-auto lg:mx-0">
               Usamos tecnologia e especialistas notariais e registrais para liberar o crédito que regulariza seu imóvel sem complicação.
@@ -264,56 +264,58 @@ function App() {
 
       {/* 4. SEÇÃO INSTITUCIONAL / SOBRE */}
       <section className="py-20 lg:py-32 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
+        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-12">
           
           <motion.div 
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-             className="lg:w-1/2"
+             className="lg:w-1/2 flex flex-col lg:items-end text-left"
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-nc-text-dark mb-6 tracking-tight leading-tight">O que a <span className="text-nc-primary-blue">NotaryCred</span><br/>faz por você</h2>
-            <div className="w-16 h-1 bg-nc-primary-blue mb-8"></div>
-            <p className="text-lg text-nc-text-gray font-normal mb-12 leading-relaxed max-w-lg">
-              Unimos crédito inteligente, suporte jurídico e tecnologia para tornar a regularização do seu imóvel mais simples, segura e acessível.
-            </p>
-            
-            <div className="space-y-8 mb-12">
-              <div className="flex items-start gap-5">
-                <div className="w-14 h-14 bg-[#EAF5F0] rounded-2xl flex items-center justify-center text-nc-primary-blue text-2xl flex-shrink-0 shadow-sm">
-                  <i className="bi bi-house-add"></i>
+            <div className="w-full max-w-lg">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-nc-text-dark mb-6 tracking-tight leading-tight">O que a <span className="text-nc-primary-blue">NotaryCred</span><br/>faz por você</h2>
+              <div className="w-16 h-1 bg-nc-primary-blue mb-8"></div>
+              <p className="text-lg text-nc-text-gray font-normal mb-12 leading-relaxed">
+                Unimos crédito inteligente, suporte jurídico e tecnologia para tornar a regularização do seu imóvel mais simples, segura e acessível.
+              </p>
+              
+              <div className="space-y-8 mb-12">
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 bg-[#EAF5F0] rounded-2xl flex items-center justify-center text-nc-primary-blue text-2xl flex-shrink-0 shadow-sm">
+                    <i className="bi bi-house-add"></i>
+                  </div>
+                  <div className="pt-1">
+                    <h4 className="font-bold text-nc-text-dark text-lg mb-1">Crédito com segurança</h4>
+                    <p className="text-nc-text-gray text-sm leading-relaxed">Soluções de crédito com garantia do seu imóvel<br/>e taxas mais competitivas.</p>
+                  </div>
                 </div>
-                <div className="pt-1">
-                  <h4 className="font-bold text-nc-text-dark text-lg mb-1">Crédito com segurança</h4>
-                  <p className="text-nc-text-gray text-sm leading-relaxed">Soluções de crédito com garantia do seu imóvel<br/>e taxas mais competitivas.</p>
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 bg-[#EAF5F0] rounded-2xl flex items-center justify-center text-nc-primary-blue text-2xl flex-shrink-0 shadow-sm">
+                    <i className="bi bi-file-earmark-text"></i>
+                  </div>
+                  <div className="pt-1">
+                    <h4 className="font-bold text-nc-text-dark text-lg mb-1">Regularização facilitada</h4>
+                    <p className="text-nc-text-gray text-sm leading-relaxed">Viabilizamos a escritura, ITBI e registro<br/>sem burocracia e com agilidade.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 bg-[#EAF5F0] rounded-2xl flex items-center justify-center text-nc-primary-blue text-2xl flex-shrink-0 shadow-sm">
+                    <i className="bi bi-shield-check"></i>
+                  </div>
+                  <div className="pt-1">
+                    <h4 className="font-bold text-nc-text-dark text-lg mb-1">Tecnologia e especialistas</h4>
+                    <p className="text-nc-text-gray text-sm leading-relaxed">Processos digitais, análise jurídica especializada<br/>e total segurança em cada etapa.</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-start gap-5">
-                <div className="w-14 h-14 bg-[#EAF5F0] rounded-2xl flex items-center justify-center text-nc-primary-blue text-2xl flex-shrink-0 shadow-sm">
-                  <i className="bi bi-file-earmark-text"></i>
-                </div>
-                <div className="pt-1">
-                  <h4 className="font-bold text-nc-text-dark text-lg mb-1">Regularização facilitada</h4>
-                  <p className="text-nc-text-gray text-sm leading-relaxed">Viabilizamos a escritura, ITBI e registro<br/>sem burocracia e com agilidade.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-5">
-                <div className="w-14 h-14 bg-[#EAF5F0] rounded-2xl flex items-center justify-center text-nc-primary-blue text-2xl flex-shrink-0 shadow-sm">
-                  <i className="bi bi-shield-check"></i>
-                </div>
-                <div className="pt-1">
-                  <h4 className="font-bold text-nc-text-dark text-lg mb-1">Tecnologia e especialistas</h4>
-                  <p className="text-nc-text-gray text-sm leading-relaxed">Processos digitais, análise jurídica especializada<br/>e total segurança em cada etapa.</p>
-                </div>
-              </div>
-            </div>
 
-            <a href="#solucoes" className="inline-flex items-center gap-2 bg-nc-primary-blue text-white px-8 py-4 rounded-full font-bold hover:bg-nc-tech-blue transition-colors shadow-lg shadow-nc-primary-blue/30">
-              Conheça o Mordomo <i className="bi bi-arrow-right"></i>
-            </a>
+              <a href="#solucoes" className="inline-flex items-center gap-2 bg-nc-primary-blue text-white px-8 py-4 rounded-full font-bold hover:bg-nc-tech-blue transition-colors shadow-lg shadow-nc-primary-blue/30">
+                Conheça o Mordomo <i className="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </motion.div>
 
           <motion.div 
              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-             className="lg:w-1/2 relative flex justify-center lg:justify-end mt-16 lg:mt-0"
+             className="lg:w-1/2 relative flex justify-center lg:justify-start mt-16 lg:mt-0"
           >
             <div className="rounded-[2.5rem] overflow-hidden shadow-2xl w-full max-w-lg aspect-square lg:aspect-[4/4] relative">
               <img src="/segunda-imagem.png" alt="Segunda imagem NotaryCred" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
