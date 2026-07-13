@@ -9,6 +9,9 @@ const fadeUp = {
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showMore1, setShowMore1] = useState(false);
+  const [showMore2, setShowMore2] = useState(false);
+  const [showMore3, setShowMore3] = useState(false);
   const WHATSAPP_LINK = "https://wa.me/5500000000000";
 
   useEffect(() => {
@@ -165,23 +168,30 @@ function App() {
                 <p className="text-nc-primary-blue font-semibold mb-4">Empréstimo com garantia do imóvel</p>
                 <p className="text-nc-text-gray mb-6 leading-relaxed">Transforme o patrimônio do seu imóvel em capital para investir, reorganizar sua vida financeira, quitar dívidas ou desenvolver novos projetos. Com análise jurídica especializada e estrutura segura, você acessa crédito com condições mais vantajosas do que as modalidades tradicionais.</p>
                 
-                <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Ideal para</h4>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Pessoas físicas</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Empresários</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Investidores</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Profissionais liberais</li>
-                </ul>
+                
+                <div className={`overflow-hidden transition-all duration-500 ${showMore1 ? 'max-h-[1000px] opacity-100 mt-6' : 'max-h-0 opacity-0'}`}>
+                  <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Ideal para</h4>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Pessoas físicas</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Empresários</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Investidores</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Profissionais liberais</li>
+                  </ul>
 
-                <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Diferenciais</h4>
-                <ul className="space-y-2 mb-8">
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Crédito com garantia real do imóvel</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Taxas mais competitivas</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Prazos maiores para pagamento</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Análise jurídica especializada</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Processo transparente e seguro</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Atendimento personalizado durante toda a operação</li>
-                </ul>
+                  <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Diferenciais</h4>
+                  <ul className="space-y-2 mb-8">
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Crédito com garantia real do imóvel</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Taxas mais competitivas</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Prazos maiores para pagamento</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Análise jurídica especializada</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Processo transparente e seguro</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Atendimento personalizado durante toda a operação</li>
+                  </ul>
+                </div>
+                
+                <button onClick={() => setShowMore1(!showMore1)} className="text-nc-primary-blue font-bold text-sm flex items-center gap-2 mt-2 mb-6 hover:text-nc-navy-blue transition-colors outline-none">
+                  {showMore1 ? 'Ler menos' : 'Ler mais'} <i className={`bi ${showMore1 ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i>
+                </button>
               </div>
               <a href={WHATSAPP_LINK} className="w-full block text-center bg-white border-2 border-nc-primary-blue text-nc-navy-blue hover:bg-nc-navy-dark hover:text-white px-6 py-3 rounded-full font-bold transition-colors">
                 Quero crédito com meu imóvel
@@ -200,22 +210,29 @@ function App() {
                 <p className="text-blue-100 mb-4 leading-relaxed">Muitas famílias deixam de realizar a escritura definitiva porque não conseguem pagar os custos de ITBI, escritura e registro.</p>
                 <p className="text-blue-100 mb-6 leading-relaxed">O Regulariza Já transforma o próprio imóvel em garantia para viabilizar esses custos, permitindo que o proprietário finalmente regularize seu patrimônio com segurança jurídica.</p>
                 
-                <h4 className="text-lg font-bold mb-3 text-nc-light-blue">Ideal para</h4>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Compradores de imóveis novos</li>
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Clientes de construtoras</li>
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Proprietários que ainda não escrituraram</li>
-                </ul>
+                
+                <div className={`overflow-hidden transition-all duration-500 ${showMore2 ? 'max-h-[1000px] opacity-100 mt-6' : 'max-h-0 opacity-0'}`}>
+                  <h4 className="text-lg font-bold mb-3 text-nc-light-blue">Ideal para</h4>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Compradores de imóveis novos</li>
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Clientes de construtoras</li>
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Proprietários que ainda não escrituraram</li>
+                  </ul>
 
-                <h4 className="text-lg font-bold mb-3 text-nc-light-blue">Diferenciais</h4>
-                <ul className="space-y-2 mb-8">
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Crédito para custear escritura, ITBI e registro</li>
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Não exige liquidez imediata</li>
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Processo simples e rápido</li>
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Segurança jurídica durante toda a operação</li>
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Mais conversão para construtoras</li>
-                  <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Solução integrada entre cliente, cartório e incorporadora/construtora</li>
-                </ul>
+                  <h4 className="text-lg font-bold mb-3 text-nc-light-blue">Diferenciais</h4>
+                  <ul className="space-y-2 mb-8">
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Crédito para custear escritura, ITBI e registro</li>
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Não exige liquidez imediata</li>
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Processo simples e rápido</li>
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Segurança jurídica durante toda a operação</li>
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Mais conversão para construtoras</li>
+                    <li className="flex gap-3 text-blue-50 text-sm"><i className="bi bi-check-circle-fill text-nc-primary-blue mt-0.5"></i> Solução integrada entre cliente, cartório e incorporadora/construtora</li>
+                  </ul>
+                </div>
+                
+                <button onClick={() => setShowMore2(!showMore2)} className="text-nc-light-blue font-bold text-sm flex items-center gap-2 mt-2 mb-6 hover:text-white transition-colors outline-none relative z-10">
+                  {showMore2 ? 'Ler menos' : 'Ler mais'} <i className={`bi ${showMore2 ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i>
+                </button>
               </div>
               <a href={WHATSAPP_LINK} className="w-full block text-center bg-white border-2 border-nc-primary-blue text-nc-navy-blue hover:bg-nc-navy-dark hover:text-white px-6 py-3 rounded-full font-bold transition-colors relative z-10">
                 Quero regularizar agora
@@ -233,24 +250,31 @@ function App() {
                 <p className="text-nc-text-gray mb-4 leading-relaxed">Uma plataforma desenvolvida para construtoras, incorporadoras e parceiros do mercado imobiliário que identifica empreendimentos entregues cujas unidades ainda não tiveram a escritura definitiva realizada.</p>
                 <p className="text-nc-text-gray mb-6 leading-relaxed">A tecnologia cruza informações registrais e imobiliárias para localizar oportunidades de regularização, recuperação de receita e relacionamento com clientes.</p>
                 
-                <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Ideal para</h4>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Construtoras</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Incorporadoras</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Fundos imobiliários</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Servicers</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Operações de pós-venda</li>
-                </ul>
+                
+                <div className={`overflow-hidden transition-all duration-500 ${showMore3 ? 'max-h-[1000px] opacity-100 mt-6' : 'max-h-0 opacity-0'}`}>
+                  <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Ideal para</h4>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Construtoras</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Incorporadoras</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Fundos imobiliários</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Servicers</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-arrow-right-short text-nc-primary-blue mt-0.5"></i> Operações de pós-venda</li>
+                  </ul>
 
-                <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Diferenciais</h4>
-                <ul className="space-y-2 mb-8">
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Identificação automática de imóveis ainda não escriturados</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Inteligência baseada em dados registrais</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Mapeamento de oportunidades em escala</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Recuperação de receitas esquecidas</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Geração de novos negócios</li>
-                  <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Dashboard com indicadores e inteligência operacional</li>
-                </ul>
+                  <h4 className="text-lg font-bold text-nc-navy-blue mb-3">Diferenciais</h4>
+                  <ul className="space-y-2 mb-8">
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Identificação automática de imóveis ainda não escriturados</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Inteligência baseada em dados registrais</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Mapeamento de oportunidades em escala</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Recuperação de receitas esquecidas</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Geração de novos negócios</li>
+                    <li className="flex gap-3 text-nc-text-gray text-sm"><i className="bi bi-check-circle-fill text-nc-navy-blue mt-0.5"></i> Dashboard com indicadores e inteligência operacional</li>
+                  </ul>
+                </div>
+
+                <button onClick={() => setShowMore3(!showMore3)} className="text-nc-primary-blue font-bold text-sm flex items-center gap-2 mt-2 mb-6 hover:text-nc-navy-blue transition-colors outline-none">
+                  {showMore3 ? 'Ler menos' : 'Ler mais'} <i className={`bi ${showMore3 ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i>
+                </button>
               </div>
               <a href={WHATSAPP_LINK} className="w-full block text-center bg-white border-2 border-nc-primary-blue text-nc-navy-blue hover:bg-nc-navy-dark hover:text-white px-6 py-3 rounded-full font-bold transition-colors">
                 Conhecer solução para empresas
