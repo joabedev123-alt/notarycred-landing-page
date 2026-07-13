@@ -562,17 +562,17 @@ function App() {
                   aria-label="NotaryCred Logo"
                 ></div>
               </div>
-              <p className="text-nc-text-gray text-sm mb-6">A nova forma de fazer crédito com escritura pública.</p>
+              <p className="text-nc-text-gray text-base md:text-lg mb-6">A nova forma de fazer crédito com escritura pública.</p>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-nc-text-gray hover:text-white hover:bg-nc-navy-dark transition-colors"><i className="bi bi-instagram"></i></a>
-                <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-nc-text-gray hover:text-white hover:bg-nc-navy-dark transition-colors"><i className="bi bi-linkedin"></i></a>
-                <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-nc-text-gray hover:text-white hover:bg-nc-navy-dark transition-colors"><i className="bi bi-facebook"></i></a>
+                <a href="#" className="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-nc-text-gray hover:text-white hover:bg-nc-navy-dark transition-colors text-lg"><i className="bi bi-instagram"></i></a>
+                <a href="#" className="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-nc-text-gray hover:text-white hover:bg-nc-navy-dark transition-colors text-lg"><i className="bi bi-linkedin"></i></a>
+                <a href="#" className="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-nc-text-gray hover:text-white hover:bg-nc-navy-dark transition-colors text-lg"><i className="bi bi-facebook"></i></a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-4">Menu rápido</h4>
-              <ul className="space-y-2 text-sm text-nc-text-gray">
+              <h4 className="text-white font-bold text-lg mb-4">Menu rápido</h4>
+              <ul className="space-y-3 text-base text-nc-text-gray">
                 <li><a href="#inicio" className="hover:text-nc-primary-blue transition-colors">Início</a></li>
                 <li><a href="#solucoes" className="hover:text-nc-primary-blue transition-colors">Soluções</a></li>
                 <li><a href="#como-funciona" className="hover:text-nc-primary-blue transition-colors">Como funciona</a></li>
@@ -581,8 +581,8 @@ function App() {
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-4">Soluções</h4>
-              <ul className="space-y-2 text-sm text-nc-text-gray">
+              <h4 className="text-white font-bold text-lg mb-4">Soluções</h4>
+              <ul className="space-y-3 text-base text-nc-text-gray">
                 <li><a href="#solucoes" className="hover:text-nc-primary-blue transition-colors">Home Equity</a></li>
                 <li><a href="#solucoes" className="hover:text-nc-primary-blue transition-colors">Intelligence Scanner</a></li>
                 <li><a href="#solucoes" className="hover:text-nc-primary-blue transition-colors">Regulariza Já</a></li>
@@ -590,8 +590,8 @@ function App() {
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-4">Contato</h4>
-              <ul className="space-y-3 text-sm text-nc-text-gray">
+              <h4 className="text-white font-bold text-lg mb-4">Contato</h4>
+              <ul className="space-y-4 text-base text-nc-text-gray">
                 <li className="flex items-start gap-3">
                   <i className="bi bi-whatsapp text-nc-primary-blue mt-1"></i>
                   <span>Atendimento nacional via WhatsApp</span>
@@ -604,16 +604,16 @@ function App() {
             </div>
           </div>
           
-          <div className="pt-8 border-t border-slate-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="pt-8 border-t border-slate-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-              <p className="text-slate-500 text-xs">
+              <p className="text-slate-400 text-sm">
                 © 2026 NotaryCred. Todos os direitos reservados.
               </p>
-              <p className="text-slate-500 text-xs flex items-center">
+              <p className="text-slate-400 text-sm flex items-center">
                 Produzida com <i className="bi bi-heart-fill text-nc-primary-blue mx-1"></i> por <a href="https://camaly.com.br/" target="_blank" rel="noreferrer" className="font-bold text-white hover:text-nc-primary-blue transition-colors ml-1">CAMALY</a>
               </p>
             </div>
-            <p className="text-nc-text-gray text-[10px] max-w-xl text-center md:text-right">
+            <p className="text-nc-text-gray text-xs md:text-sm max-w-xl text-center md:text-right">
               Aviso institucional: A análise está sujeita à avaliação documental, jurídica e de crédito, conforme o tipo de solução contratada.
             </p>
           </div>
