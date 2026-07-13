@@ -364,7 +364,10 @@ function App() {
       {/* 2.5 MARCAS PARCEIRAS */}
       <section className="py-24 md:py-32 bg-white border-b border-gray-100 overflow-hidden">
         <div className="container mx-auto px-6 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nc-navy-blue tracking-tight text-center">Marcas que confiam na NotaryCred</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nc-navy-blue tracking-tight text-center flex flex-col md:flex-row items-center justify-center gap-3">
+            Marcas que confiam na 
+            <img src="/logo04.png" alt="NotaryCred" className="h-10 md:h-14 lg:h-16 w-auto object-contain" />
+          </h2>
         </div>
         
         <div className="relative flex w-full overflow-hidden">
