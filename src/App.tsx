@@ -36,7 +36,6 @@ function App() {
             <a href="#inicio" className="hover:text-nc-navy-blue transition-colors">Início</a>
             <a href="#solucoes" className="hover:text-nc-navy-blue transition-colors">Soluções</a>
             <a href="#como-funciona" className="hover:text-nc-navy-blue transition-colors">Como funciona</a>
-            <a href="#beneficios" className="hover:text-nc-navy-blue transition-colors">Benefícios</a>
             <a href="#faq" className="hover:text-nc-navy-blue transition-colors">FAQ</a>
           </nav>
           <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="hidden md:flex bg-nc-primary-blue text-white px-6 py-2.5 rounded-full font-semibold hover:bg-nc-tech-blue transition-colors shadow-lg shadow-nc-navy-dark/30">
@@ -57,7 +56,6 @@ function App() {
             <a href="#inicio" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold text-slate-200 hover:text-nc-navy-blue">Início</a>
             <a href="#solucoes" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold text-slate-200 hover:text-nc-navy-blue">Soluções</a>
             <a href="#como-funciona" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold text-slate-200 hover:text-nc-navy-blue">Como funciona</a>
-            <a href="#beneficios" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold text-slate-200 hover:text-nc-navy-blue">Benefícios</a>
             <a href="#faq" onClick={() => setIsMobileMenuOpen(false)} className="font-semibold text-slate-200 hover:text-nc-navy-blue">FAQ</a>
             <a href={WHATSAPP_LINK} onClick={() => setIsMobileMenuOpen(false)} className="bg-nc-primary-blue text-white px-6 py-3 rounded-full font-bold text-center mt-2">
               Falar com especialista
@@ -468,34 +466,7 @@ function App() {
 
 
 
-      {/* 8. BENEFÍCIOS */}
-      <section id="beneficios" className="py-16 lg:py-24 bg-nc-soft-bg">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-nc-navy-blue mb-4">Por que escolher a NotaryCred?</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: 'bi-shield-fill-check', title: 'Mais segurança jurídica' },
-              { icon: 'bi-graph-up-arrow', title: 'Mais valorização do patrimônio' },
-              { icon: 'bi-house-check-fill', title: 'Facilidade para vender ou regularizar' },
-              { icon: 'bi-lightning-charge-fill', title: 'Menos burocracia' },
-              { icon: 'bi-piggy-bank-fill', title: 'Solução acessível e prática' },
-              { icon: 'bi-headset', title: 'Atendimento claro e orientado' },
-              { icon: 'bi-cpu-fill', title: 'Tecnologia aplicada ao mercado' },
-              { icon: 'bi-gem', title: 'Imóvel como oportunidade financeira' }
-            ].map((item, idx) => (
-              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all group">
-                <div className="w-14 h-14 bg-gradient-to-br from-nc-primary-blue/10 to-nc-gold/5 text-nc-primary-blue rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 ring-1 ring-nc-trust-green/20 group-hover:bg-nc-primary-blue group-hover:text-white transition-colors duration-300">
-                  <i className={`bi ${item.icon}`}></i>
-                </div>
-                <h4 className="text-nc-text-dark font-bold leading-tight">{item.title}</h4>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 11. FAQ */}
       <section id="faq" className="py-16 lg:py-24 bg-white">
