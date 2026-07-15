@@ -366,7 +366,7 @@ function App() {
         <div className="container mx-auto px-6 mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-nc-navy-blue tracking-tight text-center flex flex-col md:flex-row items-center justify-center gap-3">
             Marcas que confiam na 
-            <img src="/logo03.png" alt="NotaryCred" className="h-16 md:h-20 lg:h-24 w-auto object-contain" />
+            <img src="/logo03.png" alt="NotaryCred" className="h-32 md:h-48 lg:h-56 w-auto object-contain" />
           </h2>
         </div>
         
@@ -532,12 +532,15 @@ function App() {
       <section className="py-24 lg:py-32 bg-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
-        <div className="container mx-auto px-6 relative z-10 text-center">
+        <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 tracking-tight">Pronto para transformar seu patrimônio?</h2>
           <p className="text-slate-300 mb-10 text-lg md:text-xl max-w-2xl mx-auto font-normal">Fale com um especialista agora e descubra como a NotaryCred pode acelerar o processo de forma 100% segura.</p>
-          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="inline-block bg-nc-primary-blue text-nc-text-dark px-10 py-5 rounded-2xl font-extrabold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-nc-primary-blue/20">
+          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="inline-block bg-nc-primary-blue text-nc-text-dark px-10 py-5 rounded-2xl font-extrabold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-nc-primary-blue/20 mb-8">
             Falar com Especialista
           </a>
+          <p className="text-slate-400 text-xs md:text-sm max-w-3xl text-center leading-relaxed">
+            A NotaryCred não é uma instituição financeira nem concede crédito com recursos próprios. Atua como uma originadora e estruturadora de operações de crédito, realizando a prospecção, validação documental, análise preliminar e intermediação entre o cliente, a instituição financeira (BaaS) e os fundos de investimento responsáveis pela concessão dos recursos.
+          </p>
         </div>
       </section>
 
